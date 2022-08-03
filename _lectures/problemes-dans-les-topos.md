@@ -7,3 +7,4 @@ macrolib: macros
 ---
 
 @include{0000}
+@include{000A}
