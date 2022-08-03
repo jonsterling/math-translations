@@ -52,9 +52,16 @@
 (define-local (bold kwd)
   @raw{\mathbf{@kwd}})
 
+(define-local (underline kwd)
+  @raw{\underline{@kwd}})
+
 (define-global (REL E)
   (bold "Rel")
   (prn E))
+
+(define-global (MONO X Y)
+  (underline (bold "Mono"))
+  (prn (raw X "," Y)))
 
 
 (define-global (TOP E)
@@ -80,7 +87,7 @@
   f (Sub @raw{*}))
 
 (define-global (SET)
-  (bold "Set"))
+  (bold "Ens"))
 
 (define-global (tick)
   @raw{'})
