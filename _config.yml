@@ -126,6 +126,11 @@ sheafy:
       sublayout: sheafy/node/result
       genus: Proposition
       clicker: result
+    remark:
+      layout: sheafy/tree/default
+      sublayout: sheafy/node/result
+      genus: Remark
+      clicker: result
     definition:
       layout: sheafy/tree/default
       sublayout: sheafy/node/result
