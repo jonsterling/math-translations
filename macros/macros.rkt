@@ -87,7 +87,7 @@
   f (Sub @raw{*}))
 
 (define-global (SET)
-  (bold "Set"))
+  (bold "Ens"))
 
 (define-global (tick)
   @raw{'})
