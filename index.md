@@ -4,7 +4,7 @@ title: Home
 ---
 
 This is a hypertext English translation of Bénabou's famous report *Problémes
-dans le topos*. Errors in translation belong to me alone; I have also taken
+dans les topos*. Errors in translation belong to me alone; I have also taken
 some liberties to ensure readability.
 
 Node numberings of the form **1.2.3** are guaranteed to be the same as in the
