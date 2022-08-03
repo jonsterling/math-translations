@@ -90,7 +90,7 @@ defaults:
   - scope:
       type: nodes
     values:
-      taxon: anon
+      taxon: inline-section
       excerpt: ""
   - scope:
       type: lectures
@@ -110,6 +110,7 @@ sheafy:
       sublayout: sheafy/node/section
       genus: Section
       clicker: section
+      toc: true
     theorem:
       layout: sheafy/tree/default
       sublayout: sheafy/node/result
@@ -135,10 +136,11 @@ sheafy:
       sublayout: sheafy/node/trans-note
       genus: Translator’s Note
       clicker: result
-    anon:
+    inline-section:
       layout: sheafy/tree/default
       sublayout: sheafy/node/result
       clicker: section
+      toc: true
 
 changelog:
   authors:
