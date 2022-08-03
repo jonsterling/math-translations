@@ -94,5 +94,11 @@
 (define-global (ECat)
   @raw{\mathcal{E}})
 
+(define-global (Hom E X Y)
+  (bold "Hom")
+  (Sub E)
+  (brk
+   (raw X "," Y)))
+
 
 (publish-macro-library 'macros)
