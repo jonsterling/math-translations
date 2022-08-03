@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>Problèmes dans les topos | Problèmes dans le topos</title>
+<meta name="generator" content="Jekyll v4.2.1" />
+<meta property="og:title" content="Problèmes dans les topos" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="A mathematical web page." />
+<meta property="og:description" content="A mathematical web page." />
+<link rel="canonical" href="https://www.jonmsterling.com//problemes-dans-le-topos/lectures/problemes-dans-les-topos.html" />
+<meta property="og:url" content="https://www.jonmsterling.com//problemes-dans-le-topos/lectures/problemes-dans-les-topos.html" />
+<meta property="og:site_name" content="Problèmes dans le topos" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2022-01-01T00:00:00+01:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Problèmes dans les topos" />
+<script type="application/ld+json">
+{"@type":"BlogPosting","headline":"Problèmes dans les topos","dateModified":"2022-01-01T00:00:00+01:00","datePublished":"2022-01-01T00:00:00+01:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://www.jonmsterling.com//problemes-dans-le-topos/lectures/problemes-dans-les-topos.html"},"description":"A mathematical web page.","url":"https://www.jonmsterling.com//problemes-dans-le-topos/lectures/problemes-dans-les-topos.html","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/problemes-dans-le-topos/assets/style.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" integrity="sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js" integrity="sha384-z1fJDqw8ZApjGO3/unPWUPsIymfsJmyrDVWC8Tv/a1HeOtGmkwNd/7xUS0Xcnvsx" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js" integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/microtip@0.2.2/microtip.min.css" integrity="sha256-RUSUTTyNeNKfP+mJISBiUTVElF6MSDsJcwYZrcSyUII=" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/mark.js@8.11.1/dist/mark.min.js" integrity="sha256-IdYuEFP3WJ/mNlzM18Y20Xgav3h5pgXYzl8fW4GnuPo=" crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/lunr@2.3.9/lunr.min.js" integrity="sha256-DFDZACuFeAqEKv/7Vnu1Tt5ALa58bcWZegGGFNgET8g=" crossorigin="anonymous"></script>
+
+<script>
+  const macros_promise =
+    
+    fetch("/problemes-dans-le-topos/assets/macros/macros.katex.json").then(response => response.json());
+    ;
+
+  document.addEventListener("DOMContentLoaded", function () {
+    macros_promise.then(
+      function (macros) {
+        renderMathInElement(document.body, {
+          delimiters: [
+            { left: '$$', right: '$$', display: true },
+            { left: '$', right: '$', display: false },
+            { left: '\\[', right: '\\]', display: true }
+          ],
+          macros: macros,
+          throwOnError: false
+        });
+      });
+  });
+
+</script>
+
+<style>
+  .katex { line-height: 1 !important; }
+  .antex.display { display: flex; padding: 1em; }
+  .antex.display > img { margin: 0 auto !important; }
+</style>
+</head>
+<body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/problemes-dans-le-topos/">Problèmes dans le topos</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger">
+          <a class="page-link" id="search-toggle">Search</a><a class="page-link" href="/problemes-dans-le-topos/changelog.html">Recent changes</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <style>
+  ul.toc li.ellipsis {
+    height: 0;
+    overflow: hidden;
+  }
+  section.ellipsis > header {
+    opacity: 0.5;
+    border-bottom: 3px dashed black;
+  }
+  section.ellipsis > :not(header) {
+    display: none;
+  }
+  #search-form {
+    margin-bottom: 2rem;
+  }
+  #search-form fieldset {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #search-form input {
+    flex-grow: 1;
+  }
+  #search-form .hint {
+    flex-basis: 100%;
+    margin: 0;
+  }
+  #search-form .hint summary {
+    font-size: small;
+  }
+</style>
+
+<script src="/problemes-dans-le-topos/assets/search.js"></script>
+
+<form id="search-form" hidden>
+  <fieldset>
+    <legend>Search</legend>
+    <input autocomplete="off" type="search" id="search-query" name="q" placeholder="Search...."/>
+    <button type="submit">Search</button>
+    <button type="reset">Clear</button>
+    <details class="hint">
+      <summary>Click here for help.</summary>
+      <ul>
+        <li>You can type your query in the input box, click "Search" to start the search, and click "Clear" to clear the page.</li>
+        <li>The search happens on the current page. If you want to extend it, navigate the book upwards. A search on the root note will search the whole book.</li>
+        <li>Once the search is completed, matches will be highlighted and nodes with no matches will be folded. You can expand them by clicking.</li>
+        <li>Multiple terms are allowed in the query and the default behaviour is <code>OR</code>ing them. You can <code>AND</code> terms making them mandatory, see <code>+foo</code> below.</li>
+        <li><code>*foo</code>, <code>f*o</code>, and <code>fo*</code> are all allowed wildcards.</li>
+        <li><code>+foo</code> makes a term mandatory, while <code>-foo</code> makes a term forbidden.</li>
+        <li><code>foo~n</code> fuzzy matches within edit distance <code>n</code> (a positive number) from the term.</li>
+        <li>Note that the URL changes after a search. You can copy and paste it to share your search results. They will be displayed immediately upon visiting the URL.</li>
+      </ul>
+    </details>
+  </fieldset>
+</form>
+
+
+<article class="post">
+  <nav>
+    <style>
+  .breadcrumbs {
+    font-size: small;
+    margin-bottom: 1.5em;
+  }
+</style>
+
+
+
+  </nav>
+
+  <div class="post-content">
+    <section id="problemes-dans-les-topos">
+
+
+<header>
+  <h1>
+    
+      Problèmes dans les topos
+    
+  </h1><p>
+    by 
+      <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <span class="p-author h-card" itemprop="name">Jean Bénabou</span></span>
+  </p></header>
+
+
+  
+  
+    <nav>
+      <h4>Table of Contents</h4>
+      <ul class="toc">
+  
+  <li>
+    1.
+    <a href="#0000">
+      A few reminders
+    </a>
+    <a class="slug" href="/problemes-dans-le-topos/nodes/0000.html">[0000]</a>
+    <ul class="toc">
+  
+</ul>
+
+
+  </li>
+  
+</ul>
+
+
+    </nav>
+  
+
+
+
+  <section id="0000">
+
+
+<header>
+  <h2>
+    
+      <span class="numbering">1.</span>
+      A few reminders
+      <a class="slug" href="/problemes-dans-le-topos/nodes/0000.html">[0000]</a>
+    
+  </h2></header>
+
+
+
+
+    <section id="0001">
+
+
+<header class="inline">
+  <a class="slug" href="/problemes-dans-le-topos/nodes/0001.html">[0001]</a>
+  <span class='numbering'>1.1</span> (Elementary topos).
+</header>
+
+
+      <p>An <em>elementary topos</em> is a category $\ECat$ satisfying the following conditions:</p>
+
+      <ol>
+        <li>$\ECat$ inductive and finite projective limits;</li>
+        <li>$\ECat$ admits exponentials: for each $A\in \Ob{\ECat}$, the functor $(-)\times A : \ECat\to\ECat$ admits a right adjoint, written $\prn{-}\Sup{A}$;</li>
+        <li>$\ECat$ has an arrow $v : \ObjTerm{\ECat}\to \Omega$ that for each $X\in \Ob{\ECat}$ the arrows from $X$ to $\Omega$ give by fibered product with $v$ exactly the subobjects of $X$.</li>
+      </ol>
+
+      <p>We can reduce these axiomatics, as recent work by A. Kock and Ch. Mikkelson
+<a class="citation" href="#kock-mikkelsen:1974">(Hurd &amp; Loeb, 1974)</a> has shown, and describe for example in the manner of F.W. Lawvere <a class="citation" href="#lawvere:1972">(Lawvere, 1972)</a> an elementary topos as a cartesian closed category in which the notion of a subobject is representable.</p>
+
+    </section>
+
+    <section id="0002">
+
+
+<header class="inline">
+  <a class="slug" href="/problemes-dans-le-topos/nodes/0002.html">[0002]</a>
+  <span class='numbering'>1.2</span> (Axiomatics in terms of partial morphisms).
+</header>
+
+
+      <p>We know that for a topos $\ECat$ the embedding functor into the category $\ECat\Sub{p}$ of partial morphisms admits a right adjoint. This property can also be substituted for axiom (3) of <a href="/problemes-dans-le-topos/nodes/0001.html" role="tooltip" aria-label="Result 1.1. Elementary topos" class="cref"><span class="numbering">1.1</span> <span class="slug">[0001]</span></a>.</p>
+
+      <p>We will describe a different embedding of interest below.</p>
+
+    </section>
+
+    <section id="0003">
+
+
+<header class="inline">
+  <a class="slug" href="/problemes-dans-le-topos/nodes/0003.html">[0003]</a>
+  <span class='numbering'>1.3</span> (The algebra of subobjects).
+</header>
+
+
+      <p>We also know that for each object $X$ of a topos $\ECat$, the category $\Sl{\ECat}{X}$ of objects above $X$ is again a topos, and that each arrow $f : X \to Y$ determines a functor $\InvImg{f} : \Sl{\ECat}{Y}\to\Sl{\ECat}{X}$ which admits both a left adjoint (written $\Sigma\Sub{f}$) and a right adjoint (written $\Pi\Sub{f}$).</p>
+
+      <p>If we consider just the subobjects of $X$, we obtain a Heyting algebra $\Opns{X}$ and the functor $\InvImg{f}$ induces $f\Sup{-1} : \Opns{Y}\to \Opns{X}$, which likewise admits a right adjoint ($\forall\Sub{f}$, induced by $\Pi\Sub{f}$) and a left adjoint (written $\exists\Sub{f}$, defined by taking the image). By the cartesian adjunction, the objects of $\Opns{X}$ amount to points of $\Omega\Sup{X}$ and the action of the last three functors can be described by arrows of the topos. Thus restricting the image of $A\times f$ to a subobject of $A\times X$ amounts to composing the cartesian adjoint of its characteristic function with the arrow $\exists\Sub{f} : \Omega\Sup{X}\to\Omega\Sup{Y}$, which corresponds exactly to the restriction of the image of $\Omega\Sup{X}\times f$ to $\in\Sub{X}\rightarrowtail \Omega\Sup{X}\times X$ (the subobject characterized by evaluation).</p>
+
+      <section id="0004" class="trans-note">
+
+
+<header class="inline">
+  <a class="slug" href="/problemes-dans-le-topos/nodes/0004.html">[0004]</a>
+  <span class='numbering'>Translator’s Note 1.3·a</span> (Images).
+</header>
+
+
+        <p>I have taken some liberties with the wording involving images in <a href="/problemes-dans-le-topos/nodes/0003.html" role="tooltip" aria-label="Result 1.3. The algebra of subobjects" class="cref"><span class="numbering">1.3</span> <span class="slug">[0003]</span></a>
+in order to conform with Englihs mathematical usage; for instance, I have
+translated phrases like “prendre l’image par $f$ d’un sous-objet de $X$” as
+“restricting the image of $f$ to a subobject of $X$”.</p>
+
+      </section>
+
+    </section>
+
+    <section id="0005">
+
+
+<header class="inline">
+  <a class="slug" href="/problemes-dans-le-topos/nodes/0005.html">[0005]</a>
+  <span class='numbering'>1.4</span> (Relations in a topos).
+</header>
+
+
+      <p>We may define the category of relations in the topos $\ECat$ (written $\REL{\ECat}$) in the following manner:</p>
+
+      <ul>
+        <li>we set $\Ob{\REL{\ECat}} = \Ob{\ECat}$;</li>
+        <li>an arrow from $X$ to $Y$ in $\REL{\ECat}$ is a subobject of $X\times Y$ in $\ECat$ — more precisely an arrow from $X\times Y$ into $\Omega$;</li>
+        <li>the composition of $\phi:X\times Y\to \Omega$ and $\psi:Y\times Z\to\Omega$ is done by taking the fibered product $P$ over $Y$ of the subobjects corresponding to $\phi$ and $\psi$ and taking the characteristic function of the image of $P$ in $X\times Z$.</li>
+      </ul>
+
+      <p>The verification of the fact that $\REL{\ECat}$ is a category is left to the reader.</p>
+
+      <p>We embed $\ECat$ into $\REL{\ECat}$ by associating to $f : X\to Y$ the arrow $\prn{\Idn{X},f} : X \to X\times Y$; this embedding factors through the (obvious) embedding of $\ECat\Sub{p}$ into $\REL{\ECat}$.</p>
+
+    </section>
+
+    <section id="0006">
+
+
+<header class="inline">
+  <a class="slug" href="/problemes-dans-le-topos/nodes/0006.html">[0006]</a>
+  <span class='numbering'>Proposition 1·a</span>.
+</header>
+
+
+      <p>The embedding $I$ of $\ECat$ into $\REL{\ECat}$ admits a right adjoint.</p>
+
+      <p><strong>Proof.</strong>
+Since for each $X,Y\in\Ob{\ECat}$ we have</p>
+
+      <div class="kdmath">$$
+\begin{aligned}
+\REL{\ECat}\brk{I\prn{X},Y} &= \Hom{\ECat}{X\times Y}{\Omega}\\
+ &\cong \Hom{\ECat}{X}{\Omega\Sup{Y}}
+\end{aligned}
+$$</div>
+
+      <p>we see that the fonctors $\REL{\ECat}\brk{I\prn{-},Y}$ are representable.</p>
+
+      <p><span style="color:red">TODO</span></p>
+
+    </section>
+
+  </section>
+
+</section>
+
+  </div>
+
+  <style>
+  nav.d-pad {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 3rem 0rem 4rem 0rem;
+    gap: 0.6rem;
+  }
+
+  nav.d-pad i.arrow {
+    display: inline-block;
+    font-style: normal;
+    position: relative;
+    width: 0.6em;
+    height: 0.6em;
+    border: 0.2em solid black;
+    border-bottom: unset;
+    border-left: unset;
+    box-sizing: border-box;
+  }
+  nav.d-pad i.arrow.left {
+    transform: rotate(-135deg);
+  }
+  nav.d-pad i.arrow.right {
+    transform: rotate(45deg);
+  }
+  nav.d-pad a.prev { text-align: right; }
+  nav.d-pad a.next { text-align: left; }
+</style>
+
+<nav class="d-pad">
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+  
+
+  
+  
+    <h4>Bibliography</h4>
+    <ol class="bibliography"><li><!-- _layouts/bib.html -->
+<div class="text-justify">
+    <span id="kock-mikkelsen:1974">Kock, A., &amp; Mikkelsen, C. J. (1974). Topos-theoretic factorization of non-standard extensions. In A. Hurd &amp; P. Loeb (Eds.), <i>Victoria Symposium on Nonstandard Analysis</i> (pp. 122–143). Springer Berlin Heidelberg.</span>
+    
+    
+</div>
+<a class="details" href="/problemes-dans-le-topos/bibliography/kock-mikkelsen_1974.html">Details</a></li>
+<li><!-- _layouts/bib.html -->
+<div class="text-justify">
+    <span id="lawvere:1972">Lawvere, F. W. (1972). Introduction. In F. W. Lawvere (Ed.), <i>Toposes, Algebraic Geometry and Logic</i> (pp. 1–12). Springer Berlin Heidelberg.</span>
+    
+    
+</div>
+<a class="details" href="/problemes-dans-le-topos/bibliography/lawvere_1972.html">Details</a></li></ol>
+  
+
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/problemes-dans-le-topos/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Problèmes dans le topos</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Problèmes dans le topos</li><li><a class="u-email" href="mailto:jon@jonmsterling.com">jon@jonmsterling.com</a></li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/jonsterling"><svg class="svg-icon"><use xlink:href="/problemes-dans-le-topos/assets/minima-social-icons.svg#github"></use></svg> <span class="username">jonsterling</span></a></li><li><a href="https://www.twitter.com/jonmsterling"><svg class="svg-icon"><use xlink:href="/problemes-dans-le-topos/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">jonmsterling</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>A mathematical web page.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
