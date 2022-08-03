@@ -12,7 +12,10 @@ source text; in places, I have introduced more granular node subdivisions than
 Bénabou; for instance, a subnode of **1.2.3** introduced in translation could
 be numbered **1.2.3·a**.
 
-## The translation:
+I have added titles to many sections in order to facilitate a useful table of
+contents.
+
+## The translation
 
 {% for lecture in site.lectures %}
   <a href="{{ lecture.url | relative_url }}">{{lecture.title}}</a>
