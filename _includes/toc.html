@@ -1,0 +1,14 @@
+<ul class="toc">
+  {% assign filtered_resources = include.page.children | where: "taxon", "section" -%}
+  {% for resource in filtered_resources %}
+  <li>
+    {{ resource.clicks | to_numbering }}.
+    <a href="#{{resource.slug}}">
+      {{ resource.title }}
+    </a>
+    <a class="slug" href="{{resource.url | relative_url}}">[{{resource.slug}}]</a>
+    {% include toc.html page=resource %}
+  </li>
+  {% endfor %}
+</ul>
+
