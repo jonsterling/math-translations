@@ -110,7 +110,6 @@ sheafy:
       sublayout: sheafy/node/section
       genus: Section
       clicker: section
-      toc: true
     theorem:
       layout: sheafy/tree/default
       sublayout: sheafy/node/result
@@ -145,7 +144,6 @@ sheafy:
       layout: sheafy/tree/default
       sublayout: sheafy/node/result
       clicker: section
-      toc: true
 
 changelog:
   authors:
