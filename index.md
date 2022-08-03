@@ -3,7 +3,7 @@ layout: home
 title: Home
 ---
 
-This is a hypertext English translation of Bénabou's famous report *Problémes
+This is a hypertext English translation of Bénabou's famous report *Problèmes
 dans les topos*. Errors in translation belong to me alone; I have also taken
 some liberties to ensure readability.
 
