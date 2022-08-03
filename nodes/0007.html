@@ -4,21 +4,21 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.7.1 -->
-<title>Images | Problèmes dans le topos</title>
+<title>0007 | Problèmes dans le topos</title>
 <meta name="generator" content="Jekyll v4.2.1" />
-<meta property="og:title" content="Images" />
+<meta property="og:title" content="0007" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="A mathematical web page." />
 <meta property="og:description" content="A mathematical web page." />
-<link rel="canonical" href="https://www.jonmsterling.com//problemes-dans-le-topos/nodes/0004.html" />
-<meta property="og:url" content="https://www.jonmsterling.com//problemes-dans-le-topos/nodes/0004.html" />
+<link rel="canonical" href="https://www.jonmsterling.com//problemes-dans-le-topos/nodes/0007.html" />
+<meta property="og:url" content="https://www.jonmsterling.com//problemes-dans-le-topos/nodes/0007.html" />
 <meta property="og:site_name" content="Problèmes dans le topos" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2022-08-03T14:05:30+02:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Images" />
+<meta property="twitter:title" content="0007" />
 <script type="application/ld+json">
-{"@type":"BlogPosting","headline":"Images","dateModified":"2022-08-03T14:05:30+02:00","datePublished":"2022-08-03T14:05:30+02:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://www.jonmsterling.com//problemes-dans-le-topos/nodes/0004.html"},"description":"A mathematical web page.","url":"https://www.jonmsterling.com//problemes-dans-le-topos/nodes/0004.html","@context":"https://schema.org"}</script>
+{"@type":"BlogPosting","headline":"0007","dateModified":"2022-08-03T14:05:30+02:00","datePublished":"2022-08-03T14:05:30+02:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://www.jonmsterling.com//problemes-dans-le-topos/nodes/0007.html"},"description":"A mathematical web page.","url":"https://www.jonmsterling.com//problemes-dans-le-topos/nodes/0007.html","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/problemes-dans-le-topos/assets/style.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" integrity="sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs" crossorigin="anonymous">
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js" integrity="sha384-z1fJDqw8ZApjGO3/unPWUPsIymfsJmyrDVWC8Tv/a1HeOtGmkwNd/7xUS0Xcnvsx" crossorigin="anonymous"></script>
@@ -162,13 +162,13 @@
     </a>
     /
   
-    <a href="/problemes-dans-le-topos/nodes/0003.html">
+    <a href="/problemes-dans-le-topos/nodes/0005.html">
       
-      <span class="numbering">1.3.</span>
+      <span class="numbering">1.4.</span>
       
-      The algebra of subobjects
+      Relations in a topos
       
-      <span class="slug">[0003]</span>
+      <span class="slug">[0005]</span>
       
     </a>
     /
@@ -179,19 +179,24 @@
   </nav>
 
   <div class="post-content">
-    <section id="0004" class="trans-note">
+    <section id="0007">
 
 
 <header class="inline">
-  <a class="slug" href="/problemes-dans-le-topos/nodes/0004.html">[0004]</a>
-  <span class='numbering'>Translator’s Note 1.3·a</span> (Images).
+  <a class="slug" href="/problemes-dans-le-topos/nodes/0007.html">[0007]</a>
+  <span class='numbering'>Definition 1.4·a</span>.
 </header>
 
 
-  <p>I have taken some liberties with the wording involving images in <a href="/problemes-dans-le-topos/nodes/0003.html" role="tooltip" aria-label="Result 1.3. The algebra of subobjects" class="cref"><span class="numbering">1.3</span> <span class="slug">[0003]</span></a>
-in order to conform with English mathematical usage; for instance, I have
-translated phrases like “prendre l’image par $f$ d’un sous-objet de $X$” as
-“restricting the image of $f$ to a subobject of $X$”.</p>
+  <p>We may define the category of relations in the topos $\ECat$ (written $\REL{\ECat}$) in the following manner:</p>
+
+  <ul>
+    <li>we set $\Ob{\REL{\ECat}} = \Ob{\ECat}$;</li>
+    <li>an arrow from $X$ to $Y$ in $\REL{\ECat}$ is a subobject of $X\times Y$ in $\ECat$ — more precisely an arrow from $X\times Y$ into $\Omega$;</li>
+    <li>the composition of $\phi:X\times Y\to \Omega$ and $\psi:Y\times Z\to\Omega$ is done by taking the fibered product $P$ over $Y$ of the subobjects corresponding to $\phi$ and $\psi$ and taking the characteristic function of the image of $P$ in $X\times Z$.</li>
+  </ul>
+
+  <p>The verification of the fact that $\REL{\ECat}$ is a category is left to the reader.</p>
 
 </section>
 
@@ -237,17 +242,17 @@ translated phrases like “prendre l’image par $f$ d’un sous-objet de $X$”
 
 
 
-  <a class="prev" href="/problemes-dans-le-topos/nodes/0002.html">
+  <a class="prev" href="/problemes-dans-le-topos/nodes/0003.html">
     <i class="arrow left"></i>
-    <span class='numbering'>1.2</span>. Axiomatics in terms of partial morphisms
-    <span class="slug">[0002]</span>
+    <span class='numbering'>1.3</span>. The algebra of subobjects
+    <span class="slug">[0003]</span>
   </a>
 
 
 
-  <a class="next" href="/problemes-dans-le-topos/nodes/0005.html">
-    <span class='numbering'>Section 1.4</span>. Relations in a topos
-    <span class="slug">[0005]</span>
+  <a class="next" href="/problemes-dans-le-topos/nodes/0008.html">
+    <span class='numbering'>Lemma 1.4·b</span>
+    <span class="slug">[0008]</span>
     <i class="arrow right"></i>
   </a>
 

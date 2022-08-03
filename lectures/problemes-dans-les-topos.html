@@ -326,71 +326,112 @@ translated phrases like “prendre l’image par $f$ d’un sous-objet de $X$”
     <section id="0005">
 
 
+<header>
+  <h3>
+    
+      <span class="numbering">1.4.</span>
+      Relations in a topos
+      <a class="slug" href="/problemes-dans-le-topos/nodes/0005.html">[0005]</a>
+    
+  </h3></header>
+
+
+
+
+      <section id="0007">
+
+
 <header class="inline">
-  <a class="slug" href="/problemes-dans-le-topos/nodes/0005.html">[0005]</a>
-  <span class='numbering'>1.4</span> (Relations in a topos).
+  <a class="slug" href="/problemes-dans-le-topos/nodes/0007.html">[0007]</a>
+  <span class='numbering'>Definition 1.4·a</span>.
 </header>
 
 
-      <p>We may define the category of relations in the topos $\ECat$ (written $\REL{\ECat}$) in the following manner:</p>
+        <p>We may define the category of relations in the topos $\ECat$ (written $\REL{\ECat}$) in the following manner:</p>
 
-      <ul>
-        <li>we set $\Ob{\REL{\ECat}} = \Ob{\ECat}$;</li>
-        <li>an arrow from $X$ to $Y$ in $\REL{\ECat}$ is a subobject of $X\times Y$ in $\ECat$ — more precisely an arrow from $X\times Y$ into $\Omega$;</li>
-        <li>the composition of $\phi:X\times Y\to \Omega$ and $\psi:Y\times Z\to\Omega$ is done by taking the fibered product $P$ over $Y$ of the subobjects corresponding to $\phi$ and $\psi$ and taking the characteristic function of the image of $P$ in $X\times Z$.</li>
-      </ul>
+        <ul>
+          <li>we set $\Ob{\REL{\ECat}} = \Ob{\ECat}$;</li>
+          <li>an arrow from $X$ to $Y$ in $\REL{\ECat}$ is a subobject of $X\times Y$ in $\ECat$ — more precisely an arrow from $X\times Y$ into $\Omega$;</li>
+          <li>the composition of $\phi:X\times Y\to \Omega$ and $\psi:Y\times Z\to\Omega$ is done by taking the fibered product $P$ over $Y$ of the subobjects corresponding to $\phi$ and $\psi$ and taking the characteristic function of the image of $P$ in $X\times Z$.</li>
+        </ul>
 
-      <p>The verification of the fact that $\REL{\ECat}$ is a category is left to the reader.</p>
+        <p>The verification of the fact that $\REL{\ECat}$ is a category is left to the reader.</p>
 
-      <p>We embed $\ECat$ into $\REL{\ECat}$ by associating to $f : X\to Y$ the arrow $\prn{\Idn{X},f} : X \to X\times Y$; this embedding factors through the (obvious) embedding of $\ECat\Sub{p}$ into $\REL{\ECat}$.</p>
+      </section>
 
-    </section>
+      <section id="0008">
 
-    <section id="0006">
+
+<header class="inline">
+  <a class="slug" href="/problemes-dans-le-topos/nodes/0008.html">[0008]</a>
+  <span class='numbering'>Lemma 1.4·b</span>.
+</header>
+
+
+        <p>We embed $\ECat$ into $\REL{\ECat}$ by associating to $f : X\to Y$ the arrow
+$\prn{\Idn{X},f} : X \to X\times Y$; this embedding factors through the
+(obvious) embedding of $\ECat\Sub{p}$ into $\REL{\ECat}$.</p>
+
+      </section>
+
+      <section id="0006">
 
 
 <header class="inline">
   <a class="slug" href="/problemes-dans-le-topos/nodes/0006.html">[0006]</a>
-  <span class='numbering'>Proposition 1·a</span>.
+  <span class='numbering'>Proposition 1.4·c</span>.
 </header>
 
 
-      <p>The embedding $I$ of $\ECat$ into $\REL{\ECat}$ admits a right adjoint.</p>
+        <p>The embedding $I$ of $\ECat$ into $\REL{\ECat}$ admits a right adjoint.</p>
 
-      <p><strong>Proof.</strong>
+        <p><strong>Proof.</strong>
 Since for each $X,Y\in\Ob{\ECat}$ we have</p>
 
-      <div class="kdmath">$$
+        <div class="kdmath">$$
 \begin{aligned}
 \REL{\ECat}\brk{I\prn{X},Y} &= \Hom{\ECat}{X\times Y}{\Omega}\\
  &\cong \Hom{\ECat}{X}{\Omega\Sup{Y}}
 \end{aligned}
 $$</div>
 
-      <p>we see that the functors $\REL{\ECat}\brk{I\prn{-},Y}$ are representable.</p>
+        <p>we see that the functors $\REL{\ECat}\brk{I\prn{-},Y}$ are representable.</p>
 
-      <p>There is therefore an adjoint, whose value at $Y$ is $\Omega^Y$. Let us explain its value on morphisms: a morphism $\phi:X\to Y$ in $\ECat$ is sent to the morphism $\Omega^\phi:\Omega^X\to \Omega^Y$ in $\REL{\ECat}$ defined as the cartesian adjoint to the characteristic function of the subobject of $\Omega^X\times Y$ obtained by taking the image of the fibered product of $\in\Sub{X}$ and $R\Sub{\phi}$ over $X$.</p>
+        <p>There is therefore an adjoint, whose value at $Y$ is $\Omega^Y$. Let us explain its value on morphisms: a morphism $\phi:X\to Y$ in $\ECat$ is sent to the morphism $\Omega^\phi:\Omega^X\to \Omega^Y$ in $\REL{\ECat}$ defined as the cartesian adjoint to the characteristic function of the subobject of $\Omega^X\times Y$ obtained by taking the image of the fibered product of $\in\Sub{X}$ and $R\Sub{\phi}$ over $X$.</p>
 
-      <p><span class="antex display"><img style='margin: -0.022ex 0.079ex -24.016ex 0.0ex; height: 25.894ex; width: 36.916ex;' src="/problemes-dans-le-topos/antex/a467bd575784154126014576b2b3573a.svg" /></span></p>
+        <p><span class="antex display"><img style='margin: -0.022ex 0.079ex -24.016ex 0.0ex; height: 25.894ex; width: 36.916ex;' src="/problemes-dans-le-topos/antex/a467bd575784154126014576b2b3573a.svg" /></span></p>
 
-      <p>In $\SET$, we find that $\Omega^\phi$ sends each $X\tick\subseteq X$ to $\brc{y
+        <p>In $\SET$, we find that $\Omega^\phi$ sends each $X\tick\subseteq X$ to $\brc{y
 \mid \prn{\exists x} \prn{x\in X\tick \text{ and } \phi\prn{x,y} \text{ is
 true}}}$.</p>
 
-      <p>If $\phi$ corresponds to the graph of an operation $f:X\to Y$, then $X\tick$ is
+        <p>If $\phi$ corresponds to the graph of an operation $f:X\to Y$, then $X\tick$ is
 sent to $\brc{y\mid \prn{\exists x}\prn{x\in X\tick \text{ and } y=f\prn{x}}}$.
 <span style="float:right">∎</span></p>
 
-    </section>
+      </section>
 
-    <p>This suggests that by preceding the adjoint in question by the embedding $I$ we
+      <section id="0009">
+
+
+<header class="inline">
+  <a class="slug" href="/problemes-dans-le-topos/nodes/0009.html">[0009]</a>
+  <span class='numbering'>Remark 1.4·d</span>.
+</header>
+
+
+        <p>This suggests that by preceding the adjoint in question by the embedding $I$ we
 shall obtain the “existential quantification” (which sends $X$ to
 $\Omega\Sup{X}$ and $f$ to $\exists\Sub{f}$) from $\ECat$ to $\ECat$. Indeed,
 the image of the fibered product of $\in\Sub{X}$ and $\prn{\Idn{X},f}$ —
 therefore of $\in\Sub{X}$ — over $\Omega\Sup{X}\times Y$ is indeed the
 vertical composite depicted below:</p>
 
-    <p><span class="antex display"><img style='margin: -0.021ex 0.077ex -39.568ex 0.0ex; height: 41.446ex; width: 54.621ex;' src="/problemes-dans-le-topos/antex/cfece781b2abb1b603e15f608ce1ef86.svg" /></span></p>
+        <p><span class="antex display"><img style='margin: -0.021ex 0.077ex -39.568ex 0.0ex; height: 41.446ex; width: 54.621ex;' src="/problemes-dans-le-topos/antex/cfece781b2abb1b603e15f608ce1ef86.svg" /></span></p>
+
+      </section>
+
+    </section>
 
   </section>
 
