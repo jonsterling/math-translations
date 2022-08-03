@@ -1,0 +1,8 @@
+.antex-cache
+.DS_store
+compiled
+_site
+_deploy
+*~
+.sass-cache
+.jekyll*
