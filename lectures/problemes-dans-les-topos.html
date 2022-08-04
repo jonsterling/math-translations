@@ -413,6 +413,8 @@ product-exponential adjunction $\prn{-}\times X \dashv \prn{-}\Sup{X}$.
 Although this terminology is not current, we have retained it as “the cartesian
 adjunction”.</p>
 
+        <p>Another aspect of Bénabou’s terminology that we have retained is the use of “adjoint” to mean “adjoint transpose”; for instance, Bénabou speaks of the “cartesian adjoint” $T\times X\to Y$ of a morphism $T\to Y\Sup{X}$.</p>
+
       </section>
 
     </section>
@@ -566,8 +568,8 @@ $\gl{=\Sub{X}}$, has the arrow ${=\Sub{X}} : \ObjTerm{\ECat}\to
 
       <p>(that is to say, in $\SET$, the set of triples $\prn{f,x\Sub{1},x\Sub{2}}$ such that $f\prn{x\Sub{1}} = f\Sub{x\Sub{2}}$).</p>
 
-      <p>The object $\MONO{X}{Y}$ is then defined by the following fiber product:
-<span class="antex display"><img style='margin: -0.023ex 0.119ex -3.892ex 0.0ex; height: 19.723ex; width: 26.259ex;' src="/problemes-dans-les-topos/antex/9e5468bc32d1c1cd94710736b8f40080.svg" /></span></p>
+      <p>The object $\ObjMono{X}{Y}$ is then defined by the following fiber product:
+<span class="antex display"><img style='margin: -0.023ex 0.119ex -3.892ex 0.0ex; height: 19.723ex; width: 26.259ex;' src="/problemes-dans-les-topos/antex/e8c6f394b836acb2dc5657acdccef1f4.svg" /></span></p>
 
       <section id="000E" class="trans-note">
 
@@ -608,11 +610,58 @@ category theory <a class="citation" href="#grothendieck:1966:ilf">(<i>Introducti
 
 <header class="inline">
   <a class="slug" href="/problemes-dans-les-topos/nodes/000D.html">[000D]</a>
-  <span class='numbering'>Proposition 2.2·a</span>.
+  <span class='numbering'>Proposition 2.2·a</span> (Universal property).
 </header>
 
 
-        <p><span style="color:red">TODO</span></p>
+        <p>For each object $T$ of the topos $\ECat$, we have a natural bijection $\Hom{\ECat}{T}{\ObjMono{X}{Y}}\cong \Monos{\Sl{\ECat}{T}}{X\times T}{Y\times T}$ (the second term representing the set of monomorhpisms from $X\times T$ to $Y\times T$ in $\Sl{\ECat}{T}$).</p>
+
+        <p><strong>Proof.</strong>
+Via the cartesian adjunction, the arrows $g:T\to Y\Sup{X}$ correspond bijectively to arrows $\hat{g} : T\times X \to Y$; the latter are in bijection with arrows $g\tick = \prn{\hat{g},p} : T\times X \to T\times Y$, where $p$ denotes the projection $T\times X \to T$.</p>
+
+        <p>We also show that the condition “$\hat{\phi}$ factors through $=\Sub{X}$” is equivalent to “$g\tick$ is a mono”. But the first amounts to the commutativity of the inner rectangle below:</p>
+
+        <p><span class="antex display"><img style='margin: -0.021ex 0.111ex -29.063ex 0.0ex; height: 44.959ex; width: 61.173ex;' src="/problemes-dans-les-topos/antex/89eee37edb7758761dd8acc421cd86ce.svg" /></span></p>
+
+        <section id="000J" class="trans-note">
+
+
+<header class="inline">
+  <a class="slug" href="/problemes-dans-les-topos/nodes/000J.html">[000J]</a>
+  <span class='numbering'>Translator’s Note 2.2·a·a</span>.
+</header>
+
+
+          <p>The annotation $\text{(f.p.)}$ follows Bénabou’s $\text{(p.f.)}$ in the diagram in the proof of <a href="/problemes-dans-les-topos/nodes/000D.html" role="tooltip" aria-label="Proposition 2.2·a. Universal property" class="cref"><span class="numbering">Proposition 2.2·a</span> <span class="slug">[000D]</span></a> and denotes a fibered product square, i.e. a cartesian square.</p>
+
+        </section>
+
+        <p>If the rectangle commutes, the composite $\prn{g\times X\times X}\circ\prn{T\times \Delta}$ factors through $K$ as $k\circ\bar{g}$ and the square $(1)$ is a fiber product (taking account of the fact that $T\times\Delta$ is a mono); likewise, if the fibered product of $k$ and $g\times X\times X$ is a square of type $(1)$, then the inner rectangle is commutative  (by associativity of fibered products).</p>
+
+        <p>The condition on $(1)$ will turn out to be satisfied if and only if $T\times \Delta$ is the equalizer of the composites $\Con{ev}\circ \prn{T\times\pi\Sub{1}}$ and $\Con{ev}\circ \prn{T\times\pi_2}$
+(according to a classical lemma)
+<span class="antex display"><img style='margin: -0.022ex 0.08ex -17.063ex 0.0ex; height: 20.882ex; width: 80.103ex;' src="/problemes-dans-les-topos/antex/6365fc41556db8e528ef7e206069d6be.svg" /></span>
+the composites $\hat{g}\circ \prn{T\times\pi\Sub{1}}$ and $\hat{g}\circ\prn{T\times\pi\Sub{2}}$.</p>
+
+        <p>It remains to show that this property is equivalent to the fact that $\prn{\hat{g},p}$ is a mono, which can be verified in terms of sets: if we denote by $\prn{t,x\Sub{1},x\Sub{2}}$ an arbitrary element of $T\times X\times X$, the two properties amount to the condition “$\hat{g}\prn{t,x\Sub{1}} = \hat{g}\prn{t,x\Sub{2}}$ entails $x\Sub{1}=x\Sub{2}$”.
+<span style="float:right">∎</span></p>
+
+      </section>
+
+      <section id="000K">
+
+
+<header class="inline">
+  <a class="slug" href="/problemes-dans-les-topos/nodes/000K.html">[000K]</a>
+  <span class='numbering'>Corollary 2.2·b</span>.
+</header>
+
+
+        <p>If $T=\ObjTerm{\ECat}$, we obtain a natural bijection</p>
+
+        <div class="kdmath">$$
+\Hom{\ECat}{\ObjTerm{\ECat}}{\ObjMono{X}{Y}} \cong \Monos{\ECat}{X}{Y}
+$$</div>
 
       </section>
 

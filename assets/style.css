@@ -275,7 +275,9 @@ table td { border: 1px solid #e8e8e8; }
 
 .highlight .il { color: #099; }
 
-body { font-family: "Inria Sans"; font-size: 12pt; }
+body { font-family: "Inria Sans"; font-size: 12pt; overflow: hidden; overflow-y: auto; }
+
+.wrapper { max-width: calc(780px - (60px * 2)); }
 
 h1, h2, h3, h4, h5, h6 { font-family: "Palatino", "Inria Sans" !important; font-weight: bold !important; }
 
@@ -312,7 +314,5 @@ header.inline + p + * { margin-top: 10px; }
 header.inline .numbering { font-weight: bold; }
 
 section { margin-bottom: 1em; }
-
-.wrapper { max-width: calc(780px - (60px * 2)); }
 
 /*# sourceMappingURL=style.css.map */

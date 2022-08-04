@@ -59,7 +59,7 @@
   (bold "Rel")
   (prn E))
 
-(define-global (MONO X Y)
+(define-global (ObjMono X Y)
   (underline (bold "Mono"))
   (prn (raw X "," Y)))
 
@@ -105,7 +105,14 @@
   (bold "Hom")
   (Sub E)
   (brk
-   (raw X "," Y)))
+   @raw{@X,@Y}))
+
+
+(define-global (Monos E X Y)
+  (bold "Mono")
+  (Sub E)
+  (brk
+   @raw{@X,@Y}))
 
 
 (publish-macro-library 'macros)
