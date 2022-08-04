@@ -120,6 +120,11 @@ sheafy:
       sublayout: sheafy/node/result
       genus: Lemma
       clicker: result
+    corollary:
+      layout: sheafy/tree/default
+      sublayout: sheafy/node/result
+      genus: Corollary
+      clicker: result
     proposition:
       layout: sheafy/tree/default
       sublayout: sheafy/node/result
