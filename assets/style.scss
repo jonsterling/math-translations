@@ -7,7 +7,15 @@
 body {
   font-family: "Inria Sans";
   font-size: 12pt;
+  overflow: hidden;
+  overflow-y: auto;
 }
+
+
+.wrapper {
+  max-width: calc(780px - (60px * 2));
+}
+
 
 h1,h2,h3,h4,h5,h6  {
   font-family: "Palatino", "Inria Sans" !important;
@@ -95,14 +103,4 @@ header.inline .numbering {
 
 section {
   margin-bottom: 1em;
-}
-
-
-
-
-.wrapper {
-  max-width: calc(780px - (60px * 2));
-}
-
-header.site-header {
 }
