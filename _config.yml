@@ -2,7 +2,7 @@ title: Problèmes dans les topos
 email: jon@jonmsterling.com
 description: >-
   A mathematical web page.
-baseurl: &baseurl "/problemes-dans-le-topos"
+baseurl: &baseurl "/problemes-dans-les-topos"
 url: "https://www.jonmsterling.com/"
 twitter_username: jonmsterling
 github_username: jonsterling
