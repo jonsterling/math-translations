@@ -146,7 +146,7 @@ abbr {
 /* Format navigation */
 header > nav {
   font-size: 1rem;
-  line-height: 2;
+  line-height: 1.25;
   padding: 1rem 0 0 0;
   display: flex;
   justify-content: space-between;
@@ -177,7 +177,8 @@ header > nav ol li {
 }
 
 body > header {
-  margin-bottom: 1.2rem;
+  margin-bottom: .6rem;
+  padding-bottom: .6em;
   border-bottom: 1px solid var(--border);
 }
 
