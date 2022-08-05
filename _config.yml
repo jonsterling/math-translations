@@ -7,8 +7,6 @@ url: "https://www.jonmsterling.com/"
 twitter_username: jonmsterling
 github_username: jonsterling
 
-theme: minima
-
 safe: false
 source: .
 destination: ./_site

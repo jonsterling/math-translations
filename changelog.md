@@ -7,7 +7,6 @@ limit: 50
 <style>
 
   details > summary {
-    margin-left: 30px;
     margin-bottom: 15px;
     padding-inline-start: 1ch;
   }
@@ -29,7 +28,6 @@ limit: 50
 
   summary {
     cursor: pointer;
-    margin-left: 30px;
     padding-inline-start: 1ch;
   }
 
@@ -42,6 +40,12 @@ limit: 50
   li.diff-A::marker { color: hsl(120, 100%, 40%); }
   li.diff-M::marker { color: hsl(240, 100%, 40%); }
   li.diff-D::marker { color: hsl(  0, 100%, 40%); }
+
+  ul {
+    padding: 0;
+    margin-top: 0;
+    margin-left: 0;
+  }
 
   .author {
     float: right;
