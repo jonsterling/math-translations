@@ -64,7 +64,6 @@ antex:
     inline_macro: false
 
 plugins:
-  - jekyll-feed
   - jekyll-scholar
   - jekyll/sheafy
 
