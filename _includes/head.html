@@ -18,29 +18,5 @@
   <script src="https://cdn.jsdelivr.net/npm/lunr@2.3.9/lunr.min.js"
     integrity="sha256-DFDZACuFeAqEKv/7Vnu1Tt5ALa58bcWZegGGFNgET8g=" crossorigin="anonymous"></script>
 
-  <script>
-    const macros_promise =
-      {% if page.macrolib %}
-      fetch("{{site.baseurl}}/assets/macros/{{page.macrolib}}.katex.json").then(response => response.json());
-      {% else %}
-      Promise.resolve({})
-      {% endif %};
-
-    document.addEventListener("DOMContentLoaded", function () {
-      macros_promise.then(
-        function (macros) {
-          renderMathInElement(document.body, {
-            delimiters: [
-              { left: '$$', right: '$$', display: true },
-              { left: '$', right: '$', display: false },
-              { left: '\\[', right: '\\]', display: true }
-            ],
-            macros: macros,
-            throwOnError: false
-          });
-        });
-    });
-
-  </script>
 
 </head>

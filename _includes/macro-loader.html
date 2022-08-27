@@ -1,0 +1,27 @@
+<script>
+    (function() {
+      const macros_promise =
+        {% if page.macrolib %}
+        fetch("{{site.baseurl}}/assets/macros/{{page.macrolib}}.katex.json").then(response => response.json());
+        {% else %}
+        Promise.resolve({})
+        {% endif %};
+
+      const sectionElement = document.getElementById("{{page.slug}}");
+
+      document.addEventListener("DOMContentLoaded", function () {
+        macros_promise.then(
+          function (macros) {
+            renderMathInElement(sectionElement, {
+              delimiters: [
+                { left: '$$', right: '$$', display: true },
+                { left: '$', right: '$', display: false },
+                { left: '\\[', right: '\\]', display: true }
+              ],
+              macros: macros,
+              throwOnError: false
+            });
+          });
+      });
+    })();
+</script>
