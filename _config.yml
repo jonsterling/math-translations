@@ -29,7 +29,7 @@ kramdown:
   parse_block_html: true
 
 antex:
-  inlining: true
+  inlining: false
   url_path_prefix: *baseurl
 
   preamble: >-
