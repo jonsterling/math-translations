@@ -16,15 +16,21 @@
   <script src="https://cdn.jsdelivr.net/npm/lunr@2.3.9/lunr.min.js" integrity="sha256-DFDZACuFeAqEKv/7Vnu1Tt5ALa58bcWZegGGFNgET8g=" crossorigin="anonymous"></script>
 
   <script>
-    const macros_promise =
-      
-      fetch("/problemes-dans-les-topos/assets/macros/macros.katex.json").then(response => response.json());
-      ;
+    const katexMacroLibCache = {};
+    function loadKaTeXMacroLibrary(macrolib) {
+      const cached = katexMacroLibCache[macrolib];
+      if (cached) { return cached; }
+      const promise = fetch("/problemes-dans-les-topos/assets/macros/" + macrolib + ".katex.json").then(response => response.json());
+      katexMacroLibCache[macrolib] = promise;
+      return promise;
+    }
 
-    document.addEventListener("DOMContentLoaded", function () {
-      macros_promise.then(
-        function (macros) {
-          renderMathInElement(document.body, {
+    function renderMacrosInSection(macrolib, sectionId) {
+      const macros_promise = loadKaTeXMacroLibrary(macrolib);
+      const sectionElement = document.getElementById(sectionId);
+      document.addEventListener("DOMContentLoaded", function () {
+        macros_promise.then(function (macros) {
+          renderMathInElement(sectionElement, {
             delimiters: [
               { left: '$$', right: '$$', display: true },
               { left: '$', right: '$', display: false },
@@ -34,8 +40,8 @@
             throwOnError: false
           });
         });
-    });
-
+      });
+    }
   </script>
 
 </head>
@@ -237,6 +243,12 @@
 
   </section>
 
+  <script>
+  
+  renderMacrosInSection("macros", "0001");
+  
+</script>
+
   <section id="0002">
 
 
@@ -251,6 +263,12 @@
     <p>We will describe a different embedding of interest below.</p>
 
   </section>
+
+  <script>
+  
+  renderMacrosInSection("macros", "0002");
+  
+</script>
 
   <section id="0003">
 
@@ -281,6 +299,12 @@ translated phrases like “prendre l’image par $f$ d’un sous-objet de $X$”
 
     </section>
 
+    <script>
+  
+  renderMacrosInSection("macros", "0004");
+  
+</script>
+
     <section id="000I" class="trans-note">
 
 
@@ -299,7 +323,19 @@ adjunction”.</p>
 
     </section>
 
+    <script>
+  
+  renderMacrosInSection("macros", "000I");
+  
+</script>
+
   </section>
+
+  <script>
+  
+  renderMacrosInSection("macros", "0003");
+  
+</script>
 
   <section id="0005">
 
@@ -337,6 +373,12 @@ adjunction”.</p>
 
     </section>
 
+    <script>
+  
+  renderMacrosInSection("macros", "0007");
+  
+</script>
+
     <section id="0008">
 
 
@@ -351,6 +393,12 @@ $\prn{\Idn{X},f} : X \to X\times Y$; this embedding factors through the
 (obvious) embedding of $\ECat\Sub{p}$ into $\REL{\ECat}$.</p>
 
     </section>
+
+    <script>
+  
+  renderMacrosInSection("macros", "0008");
+  
+</script>
 
     <section id="0006">
 
@@ -446,6 +494,12 @@ sent to $\brc{y\mid \prn{\exists x}\prn{x\in X\tick \text{ and } y=f\prn{x}}}$.
 <span style="float:right">∎</span></p>
 
     </section>
+
+    <script>
+  
+  renderMacrosInSection("macros", "0006");
+  
+</script>
 
     <section id="0009">
 
@@ -562,9 +616,28 @@ width: 54.621ex;">
 
     </section>
 
+    <script>
+  
+  renderMacrosInSection("macros", "0009");
+  
+</script>
+
   </section>
 
+  <script>
+  
+  renderMacrosInSection("macros", "0005");
+  
+</script>
+
 </section>
+
+<script>
+  
+  renderMacrosInSection("macros", "0000");
+  
+</script>
+
 
   </div>
 

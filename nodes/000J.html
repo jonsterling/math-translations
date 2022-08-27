@@ -16,15 +16,21 @@
   <script src="https://cdn.jsdelivr.net/npm/lunr@2.3.9/lunr.min.js" integrity="sha256-DFDZACuFeAqEKv/7Vnu1Tt5ALa58bcWZegGGFNgET8g=" crossorigin="anonymous"></script>
 
   <script>
-    const macros_promise =
-      
-      fetch("/problemes-dans-les-topos/assets/macros/macros.katex.json").then(response => response.json());
-      ;
+    const katexMacroLibCache = {};
+    function loadKaTeXMacroLibrary(macrolib) {
+      const cached = katexMacroLibCache[macrolib];
+      if (cached) { return cached; }
+      const promise = fetch("/problemes-dans-les-topos/assets/macros/" + macrolib + ".katex.json").then(response => response.json());
+      katexMacroLibCache[macrolib] = promise;
+      return promise;
+    }
 
-    document.addEventListener("DOMContentLoaded", function () {
-      macros_promise.then(
-        function (macros) {
-          renderMathInElement(document.body, {
+    function renderMacrosInSection(macrolib, sectionId) {
+      const macros_promise = loadKaTeXMacroLibrary(macrolib);
+      const sectionElement = document.getElementById(sectionId);
+      document.addEventListener("DOMContentLoaded", function () {
+        macros_promise.then(function (macros) {
+          renderMathInElement(sectionElement, {
             delimiters: [
               { left: '$$', right: '$$', display: true },
               { left: '$', right: '$', display: false },
@@ -34,8 +40,8 @@
             throwOnError: false
           });
         });
-    });
-
+      });
+    }
   </script>
 
 </head>
@@ -181,6 +187,13 @@
   <p>The annotation $\text{(f.p.)}$ follows Bénabou’s $\text{(p.f.)}$ in the diagram in the proof of <a href="/problemes-dans-les-topos/nodes/000D.html" role="tooltip" aria-label="Proposition 2.2·a. Universal property" class="cref"><span class="numbering">Proposition 2.2·a</span> <span class="slug">[000D]</span></a> and denotes a fibered product square, i.e. a cartesian square.</p>
 
 </section>
+
+<script>
+  
+  renderMacrosInSection("macros", "000J");
+  
+</script>
+
 
   </div>
 

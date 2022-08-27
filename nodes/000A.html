@@ -16,15 +16,21 @@
   <script src="https://cdn.jsdelivr.net/npm/lunr@2.3.9/lunr.min.js" integrity="sha256-DFDZACuFeAqEKv/7Vnu1Tt5ALa58bcWZegGGFNgET8g=" crossorigin="anonymous"></script>
 
   <script>
-    const macros_promise =
-      
-      fetch("/problemes-dans-les-topos/assets/macros/macros.katex.json").then(response => response.json());
-      ;
+    const katexMacroLibCache = {};
+    function loadKaTeXMacroLibrary(macrolib) {
+      const cached = katexMacroLibCache[macrolib];
+      if (cached) { return cached; }
+      const promise = fetch("/problemes-dans-les-topos/assets/macros/" + macrolib + ".katex.json").then(response => response.json());
+      katexMacroLibCache[macrolib] = promise;
+      return promise;
+    }
 
-    document.addEventListener("DOMContentLoaded", function () {
-      macros_promise.then(
-        function (macros) {
-          renderMathInElement(document.body, {
+    function renderMacrosInSection(macrolib, sectionId) {
+      const macros_promise = loadKaTeXMacroLibrary(macrolib);
+      const sectionElement = document.getElementById(sectionId);
+      document.addEventListener("DOMContentLoaded", function () {
+        macros_promise.then(function (macros) {
+          renderMathInElement(sectionElement, {
             delimiters: [
               { left: '$$', right: '$$', display: true },
               { left: '$', right: '$', display: false },
@@ -34,8 +40,8 @@
             throwOnError: false
           });
         });
-    });
-
+      });
+    }
   </script>
 
 </head>
@@ -404,7 +410,19 @@ category theory <a class="citation" href="#grothendieck:1966:ilf">(<i>Introducti
 
     </section>
 
+    <script>
+  
+  renderMacrosInSection("macros", "000E");
+  
+</script>
+
   </section>
+
+  <script>
+  
+  renderMacrosInSection("macros", "000B");
+  
+</script>
 
   <section id="000C">
 
@@ -623,6 +641,12 @@ width: 61.173ex;">
 
       </section>
 
+      <script>
+  
+  renderMacrosInSection("macros", "000J");
+  
+</script>
+
       <p>If the rectangle commutes, the composite $\prn{g\times X\times X}\circ\prn{T\times \Delta}$ factors through $K$ as $k\circ\bar{g}$ and the square $(1)$ is a fiber product (taking account of the fact that $T\times\Delta$ is a mono); likewise, if the fibered product of $k$ and $g\times X\times X$ is a square of type $(1)$, then the inner rectangle is commutative  (by associativity of fibered products).</p>
 
       <p>The condition on $(1)$ will turn out to be satisfied if and only if $T\times \Delta$ is the equalizer of the composites $\Con{ev}\circ \prn{T\times\pi\Sub{1}}$ and $\Con{ev}\circ \prn{T\times\pi_2}$
@@ -752,6 +776,12 @@ the composites $\hat{g}\circ \prn{T\times\pi\Sub{1}}$ and $\hat{g}\circ\prn{T\ti
 
     </section>
 
+    <script>
+  
+  renderMacrosInSection("macros", "000D");
+  
+</script>
+
     <section id="000K">
 
 
@@ -771,7 +801,19 @@ $$</div>
 
     </section>
 
+    <script>
+  
+  renderMacrosInSection("macros", "000K");
+  
+</script>
+
   </section>
+
+  <script>
+  
+  renderMacrosInSection("macros", "000C");
+  
+</script>
 
   <section id="000F">
 
@@ -804,6 +846,12 @@ $$</div>
 
     </section>
 
+    <script>
+  
+  renderMacrosInSection("macros", "000G");
+  
+</script>
+
     <section id="000H">
 
 
@@ -817,9 +865,28 @@ $$</div>
 
     </section>
 
+    <script>
+  
+  renderMacrosInSection("macros", "000H");
+  
+</script>
+
   </section>
 
+  <script>
+  
+  renderMacrosInSection("macros", "000F");
+  
+</script>
+
 </section>
+
+<script>
+  
+  renderMacrosInSection("macros", "000A");
+  
+</script>
+
 
   </div>
 
