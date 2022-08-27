@@ -1,22 +1,5 @@
 <script>
   {% if page.macrolib %}
-  (function() {
-     const macros_promise = loadKaTeXMacroLibrary("{{page.macrolib}}");
-     const sectionElement = document.getElementById("{{page.slug}}");
-     document.addEventListener("DOMContentLoaded", function () {
-       macros_promise.then(
-         function (macros) {
-           renderMathInElement(sectionElement, {
-             delimiters: [
-               { left: '$$', right: '$$', display: true },
-               { left: '$', right: '$', display: false },
-               { left: '\\[', right: '\\]', display: true }
-             ],
-             macros: macros,
-             throwOnError: false
-           });
-         });
-     });
-  })();
+  renderMacrosInSection("{{page.macrolib}}", "{{page.slug}}");
   {% endif %}
 </script>
