@@ -4,6 +4,8 @@ date: 1981-01-01
 author:
 - Michel Coste
 - Gérard Michon
+translator:
+- Jonathan Sterling
 macrolib: coste
 ---
 

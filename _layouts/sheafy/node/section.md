@@ -21,6 +21,15 @@
     {% endfor %}
   </p>
   {%- endif -%}
+  {%- if page.translator -%}
+  <p>
+    translated by {% for translator in page.translator %}
+      <span itemprop="translator" itemscope itemtype="http://schema.org/Person">
+      <span class="p-translator h-card" itemprop="name">{{ translator }}</span></span>
+      {%- if forloop.last == false %}, {% endif -%}
+    {% endfor %}
+  </p>
+  {%- endif -%}
 </header>
 
 {% if page == page.subroot %}
