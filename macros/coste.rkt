@@ -37,10 +37,17 @@
 (define-global (Prod i)
   @raw{{\textstyle\prod}\Sub{@i}})
 
+(define-global (ETop)
+  @raw{\underline{E}})
+
+
 (define-global (BoldSymbol x)
   (match (target)
     ['katex @raw{\pmb{@x}}]
     [_ @raw{\boldsymbol{@x}}]))
 
+(define-global (Str x)
+  (BoldSymbol @raw{\mathcal{O}})
+  (Sub x))
 
 (publish-macro-library 'coste)
