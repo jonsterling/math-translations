@@ -1,8 +1,8 @@
-title: Problèmes dans les topos
+title: Mathematical translations
 email: jon@jonmsterling.com
 description: >-
   A mathematical web page.
-baseurl: &baseurl "/problemes-dans-les-topos"
+baseurl: &baseurl "/math-translations"
 url: "https://www.jonmsterling.com/"
 twitter_username: jonmsterling
 github_username: jonsterling
