@@ -129,42 +129,20 @@
 
 <nav class="breadcrumbs">
   
-    <a href="/math-translations/lectures/benabou:1973.html">
+    <a href="/math-translations/lectures/coste-michon:1981.html">
       
-      Problèmes dans les topos
-      
-    </a>
-    /
-  
-    <a href="/math-translations/nodes/000A.html">
-      
-      <span class="numbering">2.</span>
-      
-      The object of monos
-      
-      <span class="slug">[000A]</span>
+      Petits et gros topos en géométrie algébrique
       
     </a>
     /
   
-    <a href="/math-translations/nodes/000C.html">
+    <a href="/math-translations/nodes/000M.html">
       
-      <span class="numbering">2.2.</span>
+      <span class="numbering">1.</span>
       
-      Universal property of the object of monos
+      The étalés
       
-      <span class="slug">[000C]</span>
-      
-    </a>
-    /
-  
-    <a href="/math-translations/nodes/000D.html">
-      
-      <span class="numbering">2.2·a.</span>
-      
-      Universal property
-      
-      <span class="slug">[000D]</span>
+      <span class="slug">[000M]</span>
       
     </a>
     /
@@ -175,22 +153,37 @@
   </nav>
 
   <div class="post-content">
-    <section id="000J" class="trans-note">
+    
+<section id="000R">
 
 
 <header class="inline">
-  <a class="slug" href="/math-translations/nodes/000J.html">[000J]</a>
-  <span class="numbering">Translator’s Note 2.2·a·a</span>.
+  <a class="slug" href="/math-translations/nodes/000R.html">[000R]</a>
+  <span class="numbering">1·e</span> (Geometric morphisms between the little and big étale topoi).
 </header>
 
 
-  <p>The annotation $\text{(f.p.)}$ follows Bénabou’s $\text{(p.f.)}$ in the diagram in the proof of <a href="/math-translations/nodes/000D.html" role="tooltip" aria-label="Proposition 2.2·a. Universal property" class="cref"><span class="numbering">Proposition 2.2·a</span> <span class="slug">[000D]</span></a> and denotes a fibered product square, i.e. a cartesian square.</p>
+  <p>The immersion $i:\ET/V\hookrightarrow M/V$ is left exact, continuous and cocontinuous <a class="citation" href="#sga:4">(Artin et al., 1972)</a>.  It extends into an immersion</p>
+
+  <div class="kdmath">$$
+\Sum{i} : \Sh{\ET/V}\hookrightarrow \Sh{M/V}=\Sh{M}/\Yo{V}
+$$</div>
+
+  <p>which will allow us to identify the étalés over $V$ with objects of $\Sh{M}$ over $V$. $\Sum{i}$ is left exact, and has a right adjoint $i^\sharp$ (the associated “étalé” functor) which itself has a right adjoint $\Prod{i}$. We therefore have two geometric morphisms</p>
+
+  <div class="kdmath">$$
+\prn{i^\sharp,\Sum{i}} : \Sh{M}/\Yo{V}\to \Sh{\ET/V},
+\quad
+\prn{\Prod{i},i^\sharp} : \Sh{\ET/V}\to \Sh{M}/\Yo{V}
+$$</div>
+
+  <p>and the composite $i^\sharp\circ\Sum{i}$ is isomorphic to the identity.</p>
 
 </section>
 
 <script>
   
-  renderMacrosInSection("benabou", "000J");
+  renderMacrosInSection("coste", "000R");
   
 </script>
 
@@ -237,17 +230,17 @@
 
 
 
-  <a class="prev" href="/math-translations/nodes/000B.html">
+  <a class="prev" href="/math-translations/nodes/000Q.html">
     <i class="arrow left"></i>
-    <span class="numbering">Definition 2.1</span>. Construction of the object of monos
-    <span class="slug">[000B]</span>
+    <span class="numbering">1·d</span>. The little étale topos
+    <span class="slug">[000Q]</span>
   </a>
 
 
 
-  <a class="next" href="/math-translations/nodes/000K.html">
-    <span class="numbering">Corollary 2.2·b</span>
-    <span class="slug">[000K]</span>
+  <a class="next" href="/math-translations/nodes/000U.html">
+    <span class="numbering">1·f</span>. Relationship between big and little étale topoi
+    <span class="slug">[000U]</span>
     <i class="arrow right"></i>
   </a>
 
@@ -258,6 +251,17 @@
   
 
   
+  
+    <h4>Bibliography</h4>
+    <ol class="bibliography"><li>
+<!-- _layouts/bib.html -->
+<div class="text-justify">
+    <span id="sga:4">Artin, M., Grothendieck, A., &amp; Verdier, J.-L. (1972). <i>Théorie des topos et cohomologie étale des schémas</i> (Vols. 269, 270, 305). Springer-Verlag.</span>
+    
+    
+</div>
+<a class="details" href="/math-translations/bibliography/sga_4.html">Details</a>
+</li></ol>
   
 
 </article>

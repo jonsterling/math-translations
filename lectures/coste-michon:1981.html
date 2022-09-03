@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html>
+  <head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/math-translations/assets/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" integrity="sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs" crossorigin="anonymous">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js" integrity="sha384-z1fJDqw8ZApjGO3/unPWUPsIymfsJmyrDVWC8Tv/a1HeOtGmkwNd/7xUS0Xcnvsx" crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js" integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/microtip@0.2.2/microtip.min.css" integrity="sha256-RUSUTTyNeNKfP+mJISBiUTVElF6MSDsJcwYZrcSyUII=" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/mark.js@8.11.1/dist/mark.min.js" integrity="sha256-IdYuEFP3WJ/mNlzM18Y20Xgav3h5pgXYzl8fW4GnuPo=" crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/lunr@2.3.9/lunr.min.js" integrity="sha256-DFDZACuFeAqEKv/7Vnu1Tt5ALa58bcWZegGGFNgET8g=" crossorigin="anonymous"></script>
+
+  <script>
+    const katexMacroLibCache = {};
+    function loadKaTeXMacroLibrary(macrolib) {
+      const cached = katexMacroLibCache[macrolib];
+      if (cached) { return cached; }
+      const promise = fetch("/math-translations/assets/macros/" + macrolib + ".katex.json").then(response => response.json());
+      katexMacroLibCache[macrolib] = promise;
+      return promise;
+    }
+
+    function renderMacrosInSection(macrolib, sectionId) {
+      const macros_promise = loadKaTeXMacroLibrary(macrolib);
+      const sectionElement = document.getElementById(sectionId);
+      document.addEventListener("DOMContentLoaded", function () {
+        macros_promise.then(function (macros) {
+          renderMathInElement(sectionElement, {
+            delimiters: [
+              { left: '$$', right: '$$', display: true },
+              { left: '$', right: '$', display: false },
+              { left: '\\[', right: '\\]', display: true }
+            ],
+            macros: macros,
+            throwOnError: false
+          });
+        });
+      });
+    }
+  </script>
+
+</head>
+
+
+  <body>
+    <header><nav class="site-nav">
+        <a class="site-title" rel="author" href="/math-translations/">Mathematical translations</a>
+        <div class="trigger">
+          <ul>
+<li><a class="page-link" href="/math-translations/changelog.html">Recent changes</a></li>
+<li><a class="page-link" id="search-toggle">Search</a></li>
+          </ul>
+        </div>
+      </nav></header>
+
+    <style>
+  ul.toc li.ellipsis {
+    height: 0;
+    overflow: hidden;
+  }
+  section.ellipsis > header {
+    opacity: 0.5;
+    border-bottom: 3px dashed black;
+  }
+  section.ellipsis > :not(header) {
+    display: none;
+  }
+  #search-form {
+    margin-bottom: 2rem;
+  }
+  #search-form fieldset {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #search-form input {
+    flex-grow: 1;
+  }
+  #search-form .hint {
+    flex-basis: 100%;
+    margin: 0;
+  }
+  #search-form .hint summary {
+    font-size: small;
+  }
+</style>
+
+<script src="/math-translations/assets/search.js"></script>
+
+<form id="search-form" hidden>
+  <fieldset>
+    <legend>Search</legend>
+    <input autocomplete="off" type="search" id="search-query" name="q" placeholder="Search....">
+    <button type="submit">Search</button>
+    <button type="reset">Clear</button>
+    <details class="hint">
+      <summary>Click here for help.</summary>
+      <ul>
+        <li>You can type your query in the input box, click "Search" to start the search, and click "Clear" to clear the page.</li>
+        <li>The search happens on the current page. If you want to extend it, navigate the book upwards. A search on the root note will search the whole book.</li>
+        <li>Once the search is completed, matches will be highlighted and nodes with no matches will be folded. You can expand them by clicking.</li>
+        <li>Multiple terms are allowed in the query and the default behaviour is <code>OR</code>ing them. You can <code>AND</code> terms making them mandatory, see <code>+foo</code> below.</li>
+        <li>
+<code>*foo</code>, <code>f*o</code>, and <code>fo*</code> are all allowed wildcards.</li>
+        <li>
+<code>+foo</code> makes a term mandatory, while <code>-foo</code> makes a term forbidden.</li>
+        <li>
+<code>foo~n</code> fuzzy matches within edit distance <code>n</code> (a positive number) from the term.</li>
+        <li>Note that the URL changes after a search. You can copy and paste it to share your search results. They will be displayed immediately upon visiting the URL.</li>
+      </ul>
+    </details>
+  </fieldset>
+</form>
+
+
+<article class="post">
+  <nav>
+    <style>
+  .breadcrumbs {
+    font-size: small;
+    margin-bottom: 1.5em;
+  }
+</style>
+
+
+
+  </nav>
+
+  <div class="post-content">
+    <section id="coste-michon:1981">
+
+
+<header>
+  <h1>
+    
+      Petits et gros topos en géométrie algébrique
+    
+  </h1>
+<p>
+    by 
+      <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <span class="p-author h-card" itemprop="name">Michel Coste</span></span>, 
+      <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <span class="p-author h-card" itemprop="name">Gérard Michon</span></span>
+  </p></header>
+
+
+  
+  
+    <nav>
+      <h4>Table of Contents</h4>
+      <ul class="toc">
+  
+  
+  <li>
+    1.
+    <a href="#000M">
+      The étalés
+    </a>
+    <a class="slug" href="/math-translations/nodes/000M.html">[000M]</a>
+    <ul class="toc">
+  
+  
+</ul>
+
+  </li>
+  
+  <li>
+    2.
+    <a href="#000X">
+      Representation of a variety as a locally ringed topos
+    </a>
+    <a class="slug" href="/math-translations/nodes/000X.html">[000X]</a>
+    <ul class="toc">
+  
+  
+</ul>
+
+  </li>
+  
+</ul>
+
+    </nav>
+  
+
+
+
+  <section id="000S" class="trans-note">
+
+
+<header class="inline">
+  <a class="slug" href="/math-translations/nodes/000S.html">[000S]</a>
+  <span class="numbering">Translator’s Note a</span>.
+</header>
+
+
+    <p>Division into nodes ending in alphabetic indices (like <strong>1.2.3·a</strong>) are added by the translator, as are the titles of these nodes. Nodes ending in numerical indices (like <strong>1.2.3</strong>) come from the source text.</p>
+
+  </section>
+
+  <script>
+  
+  renderMacrosInSection("coste", "000S");
+  
+</script>
+
+  <p>The theory of spectra exposed in the thesis of the first author <a class="citation" href="#coste:1979">(Coste, 1979)</a> is not at first very pleasant. The goal of this text is to briefly present a different approach. This approach has been developed by the second author — influenced by the lecture “Algebraic groups” by Gabriel and Demazure — in unpublished notes. It intersects with the considerations of Joyal on local homeomorphisms in a topos. We finish by showing how the real étale topos is naturally introduced in this context.</p>
+
+  <p>The point of view adopted here is clearly geometrical. The construction of spectra then appears as a means to represent affine varieties and varieties obtained from them by a formal gluing process as ringed or “locally ringed” topoi of a certain type (cf. schemes, étale topoi of a scheme, or the algebraic spaces of Artin). We hope that this gives the theory a less indigestible character.</p>
+
+  <p>In everything that follows, $k$ denotes a base commutative ring and $M$ denotes the category of affine algebraic varieties over $k$, i.e. the opposite of the category of finitely presented $k$-algebras.</p>
+
+  <section id="000M">
+
+
+<header>
+  <h2>
+    
+      <span class="numbering">1.</span>
+      The étalés
+      <a class="slug" href="/math-translations/nodes/000M.html">[000M]</a>
+    
+  </h2></header>
+
+
+
+
+    <section id="000N">
+
+
+<header class="inline">
+  <a class="slug" href="/math-translations/nodes/000N.html">[000N]</a>
+  <span class="numbering">1·a</span> (Elementary étalés).
+</header>
+
+
+      <p>We will fix in $M$ a set $\ET$ of morphisms that we want to think of like local isomorphisms. In the examples that we shall consider, these will be either open immersions or étale morphisms. The morphisms of $\ET$ shall be called <em>elementary étalés</em>. We assume that they satisfy the following properties, which are natural given how we think of them, and satisfied by both open immersions and étale morphisms.</p>
+
+      <ol>
+        <li>Every isomorphism is an elementary étalé.</li>
+        <li>The composition of two elementary étalés is an elementary étalé.</li>
+        <li>The elementary étalés are stable under change of base.</li>
+        <li>If both $u\circ v$ and $v$ are elementary étalés, then so is $u$.</li>
+      </ol>
+
+      <p>In the terminology of Bénabou, $\ET$ is a <em>calibration</em> in $M$.</p>
+
+      <p>The elementary étalés are used to make coverings: we will associate to each affine variety $V$ a set of families of elementary étalés over $V$ that are the covers of $V$. We conventionally ask that isomorphisms are covering, and that coverings are stable under change of base and that they have local character.</p>
+
+    </section>
+
+    <script>
+  
+  renderMacrosInSection("coste", "000N");
+  
+</script>
+
+    <section id="000O">
+
+
+<header class="inline">
+  <a class="slug" href="/math-translations/nodes/000O.html">[000O]</a>
+  <span class="numbering">1·b</span> (Localization data).
+</header>
+
+
+      <p>We are then in possession of a <em>localization datum on $M$</em>. A localization datum is therefore no more than a Grothendieck topology on $M$ in which we have specified the morphisms that are used to make the covers. In algebraic geometry there are well-known localization datums: the Zariski topology with open immersions, and the étale topology with étale morphisms.</p>
+
+    </section>
+
+    <script>
+  
+  renderMacrosInSection("coste", "000O");
+  
+</script>
+
+    <section id="000P">
+
+
+<header class="inline">
+  <a class="slug" href="/math-translations/nodes/000P.html">[000P]</a>
+  <span class="numbering">1·c</span> (The big étale topos).
+</header>
+
+
+      <p>Let $\Sh{M}$ be the topos of sheaves on $M$ with the topology of the localization datum. We denote by $\Yo : M \to \Sh{M}$ the canonical functor. The objects of $\Sh{M}$ are obtained by gluing of affine varieties; the method of gluing is specified by the topology on $M$.</p>
+
+    </section>
+
+    <script>
+  
+  renderMacrosInSection("coste", "000P");
+  
+</script>
+
+    <section id="000Q">
+
+
+<header class="inline">
+  <a class="slug" href="/math-translations/nodes/000Q.html">[000Q]</a>
+  <span class="numbering">1·d</span> (The little étale topos).
+</header>
+
+
+      <p>Let us now choose an affine variety $V$. Let $\ET/V$ be the full subcategory of $M/V$ spanned elementary étalés over $V$. $\ET/V$ inherits a Grothendieck topology from the localization datum. Let $\Sh{\ET/V}$ be the topos of sheaves for this topology. The objects of $\Sh{\ET/V}$ are obtained by gluing elementary étalés over $V$; it is thus natural to think of them as the <em>étalés over $V$</em>.</p>
+
+    </section>
+
+    <script>
+  
+  renderMacrosInSection("coste", "000Q");
+  
+</script>
+
+    <section id="000R">
+
+
+<header class="inline">
+  <a class="slug" href="/math-translations/nodes/000R.html">[000R]</a>
+  <span class="numbering">1·e</span> (Geometric morphisms between the little and big étale topoi).
+</header>
+
+
+      <p>The immersion $i:\ET/V\hookrightarrow M/V$ is left exact, continuous and cocontinuous <a class="citation" href="#sga:4">(Artin et al., 1972)</a>.  It extends into an immersion</p>
+
+      <div class="kdmath">$$
+\Sum{i} : \Sh{\ET/V}\hookrightarrow \Sh{M/V}=\Sh{M}/\Yo{V}
+$$</div>
+
+      <p>which will allow us to identify the étalés over $V$ with objects of $\Sh{M}$ over $V$. $\Sum{i}$ is left exact, and has a right adjoint $i^\sharp$ (the associated “étalé” functor) which itself has a right adjoint $\Prod{i}$. We therefore have two geometric morphisms</p>
+
+      <div class="kdmath">$$
+\prn{i^\sharp,\Sum{i}} : \Sh{M}/\Yo{V}\to \Sh{\ET/V},
+\quad
+\prn{\Prod{i},i^\sharp} : \Sh{\ET/V}\to \Sh{M}/\Yo{V}
+$$</div>
+
+      <p>and the composite $i^\sharp\circ\Sum{i}$ is isomorphic to the identity.</p>
+
+    </section>
+
+    <script>
+  
+  renderMacrosInSection("coste", "000R");
+  
+</script>
+
+    <section id="000U">
+
+
+<header class="inline">
+  <a class="slug" href="/math-translations/nodes/000U.html">[000U]</a>
+  <span class="numbering">1·f</span> (Relationship between big and little étale topoi).
+</header>
+
+
+      <p>The relation between $\Sh{\ET/V}$ and $\Sh{M}/\Yo{V}$ is the same as the one between the little topos and the big topos of a topological space <a class="citation" href="#sga:4">(Artin et al., 1972, sec. IV.4.10)</a>. There is also in SGA4 an exercise whose content is more or less what we have just said. (Puzzle: find a point in common between La Samaritaine and SGA 4.)</p>
+
+      <section id="000T" class="trans-note">
+
+
+<header class="inline">
+  <a class="slug" href="/math-translations/nodes/000T.html">[000T]</a>
+  <span class="numbering">Translator’s Note 1·f·a</span>.
+</header>
+
+
+        <p>We do not understand the reference to La Samaritaine above, and would appreciate if anyone can explain the joke.</p>
+
+      </section>
+
+      <script>
+  
+  renderMacrosInSection("coste", "000T");
+  
+</script>
+
+    </section>
+
+    <script>
+  
+  renderMacrosInSection("coste", "000U");
+  
+</script>
+
+    <section id="000V">
+
+
+<header class="inline">
+  <a class="slug" href="/math-translations/nodes/000V.html">[000V]</a>
+  <span class="numbering">Definition 1·g</span>.
+</header>
+
+
+      <p>We know what the étalés on an affine variety are. The étalés on any object $X$ of $\Sh{M}$ are defined to be the morphisms $Y\to X$ whose inverse image by each morphism $\Yo{V}\to X$ is étalé over $V$. The étalés have properties 1–4 of étalés elementaires. They also obtain a local character: if $\prn{X_i\to X}\Sub{j\in J}$ is a covering family, $Y\to X$ is étalé when each $Y\times_X X_j\to X_j$ is.</p>
+
+    </section>
+
+    <script>
+  
+  renderMacrosInSection("coste", "000V");
+  
+</script>
+
+    <section id="000W">
+
+
+<header class="inline">
+  <a class="slug" href="/math-translations/nodes/000W.html">[000W]</a>
+  <span class="numbering">Definition 1·h</span> (Varieties).
+</header>
+
+
+      <p>We now come to the notion of a <em>variety</em> with respect to a localization datum. A variety is an object $X$ of $\Sh{M}$ that is covered by affine varieties that are étalé over $X$. The advantage of varieties in comparison to other objects of $\Sh{M}$ is: if $X$ is a variety, let $\ET/X$ be the full subcategory of $M/X$ spanned by affine étalés over $X$. $\Sh{\ET/X}$ is the topos of étale’s over $X$ (we may remark that if $Y$ is étalé over a variety $X$, then $Y$ is also a variety). We have the same functors $\Sum{i}$, $i^\sharp$, and $\Prod{i}$ between the little topos $\Sh{\ET/X}$ and the big topos $\Sh{M}/X$.</p>
+
+    </section>
+
+    <script>
+  
+  renderMacrosInSection("coste", "000W");
+  
+</script>
+
+  </section>
+
+  <script>
+  
+  renderMacrosInSection("coste", "000M");
+  
+</script>
+
+  <section id="000X">
+
+
+<header>
+  <h2>
+    
+      <span class="numbering">2.</span>
+      Representation of a variety as a locally ringed topos
+      <a class="slug" href="/math-translations/nodes/000X.html">[000X]</a>
+    
+  </h2></header>
+
+
+
+
+    <p><span style="color:red">TODO</span></p>
+
+  </section>
+
+  <script>
+  
+  renderMacrosInSection("coste", "000X");
+  
+</script>
+
+</section>
+
+<script>
+  
+  renderMacrosInSection("coste", "coste-michon:1981");
+  
+</script>
+
+
+  </div>
+
+  <style>
+  nav.d-pad {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 3rem 0rem 4rem 0rem;
+    gap: 0.6rem;
+  }
+
+  nav.d-pad i.arrow {
+    display: inline-block;
+    font-style: normal;
+    position: relative;
+    width: 0.6em;
+    height: 0.6em;
+    border: 0.2em solid black;
+    border-bottom: unset;
+    border-left: unset;
+    box-sizing: border-box;
+  }
+  nav.d-pad i.arrow.left {
+    transform: rotate(-135deg);
+  }
+  nav.d-pad i.arrow.right {
+    transform: rotate(45deg);
+  }
+  nav.d-pad a.prev { text-align: right; }
+  nav.d-pad a.next { text-align: left; }
+</style>
+
+<nav class="d-pad">
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+  
+
+  
+  
+    <h4>Bibliography</h4>
+    <ol class="bibliography">
+<li>
+<!-- _layouts/bib.html -->
+<div class="text-justify">
+    <span id="coste:1979">Coste, M. (1979). <i>Localization, spectra, and sheaf representation</i> (Vol. 753). Springer.</span>
+    
+    
+</div>
+<a class="details" href="/math-translations/bibliography/coste_1979.html">Details</a>
+</li>
+<li>
+<!-- _layouts/bib.html -->
+<div class="text-justify">
+    <span id="sga:4">Artin, M., Grothendieck, A., &amp; Verdier, J.-L. (1972). <i>Théorie des topos et cohomologie étale des schémas</i> (Vols. 269, 270, 305). Springer-Verlag.</span>
+    
+    
+</div>
+<a class="details" href="/math-translations/bibliography/sga_4.html">Details</a>
+</li>
+</ol>
+  
+
+</article>
+
+  </body>
+
+</html>
