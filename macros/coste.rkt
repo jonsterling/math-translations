@@ -29,7 +29,7 @@
   @raw{\widetilde{@C}})
 
 (define-global (Yo)
-  @raw{\epsilon})
+  @raw{\mathop{\epsilon}})
 
 (define-global (Sum i)
   @raw{{\textstyle\sum}\Sub{@i}})
@@ -58,7 +58,7 @@
     [_ @raw{\boldsymbol{@x}}]))
 
 (define-global (Str x)
-  (BoldSymbol @raw{\mathcal{O}})
+  @raw{\mathcal{O}}
   (Sub x))
 
 (define-global (StrTop X)
@@ -67,5 +67,18 @@
     X
     ","
     (Str X))))
+
+(define-global (GSec)
+  @raw{\mathop{@BoldSymbol{\Gamma}}})
+
+(define-global (AffLine)
+  @raw{\mathbb{A}}@Sup{1})
+
+(define-global (Idn)
+  @raw{\mathrm{Id}})
+
+
+(define-global (tick)
+  @raw{'})
 
 (publish-macro-library 'coste)
