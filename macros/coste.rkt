@@ -37,8 +37,19 @@
 (define-global (Prod i)
   @raw{{\textstyle\prod}\Sub{@i}})
 
+(define-global (TopIdent X)
+  @raw{\underline{@X}})
+
 (define-global (ETop)
-  @raw{\underline{E}})
+  @TopIdent{E})
+
+(define-global (FTop)
+  @TopIdent{F})
+
+(define-global (InvImg f)
+  f (Sup @raw{*}))
+(define-global (DirImg f)
+  f (Sub @raw{*}))
 
 
 (define-global (BoldSymbol x)
@@ -49,5 +60,12 @@
 (define-global (Str x)
   (BoldSymbol @raw{\mathcal{O}})
   (Sub x))
+
+(define-global (StrTop X)
+  (prn
+   (raw
+    X
+    ","
+    (Str X))))
 
 (publish-macro-library 'coste)
