@@ -1,9 +1,9 @@
 ---
 title: Problèmes dans les topos
-date: 2022-01-01
+date: 1973-01-01
 author:
 - Jean Bénabou
-macrolib: macros
+macrolib: benabou
 ---
 
 @include{000L}

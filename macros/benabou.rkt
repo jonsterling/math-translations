@@ -115,4 +115,4 @@
    @raw{@X,@Y}))
 
 
-(publish-macro-library 'macros)
+(publish-macro-library 'benabou)

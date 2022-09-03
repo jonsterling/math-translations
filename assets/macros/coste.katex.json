@@ -1,0 +1,1 @@
+{"\\BoldSymbol":"\\pmb{#1}","\\ET":"\\mathrm{Et}","\\Prod":"{\\textstyle\\prod}\\Sub{#1}","\\Sh":"\\widetilde{#1}","\\Sub":"_{#1}","\\Sum":"{\\textstyle\\sum}\\Sub{#1}","\\Sup":"^{#1}","\\Yo":"\\epsilon","\\brc":"\\{ #1 \\}","\\brk":"[#1]","\\gl":"\\langle #1 \\rangle","\\prn":"(#1)","\\vrt":"\\vert #1 \\vert"}
