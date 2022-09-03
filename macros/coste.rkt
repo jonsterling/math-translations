@@ -77,6 +77,8 @@
 (define-global (Idn)
   @raw{\mathrm{Id}})
 
+(define-global (RR)
+  @raw{\mathbb{R}})
 
 (define-global (tick)
   @raw{'})
