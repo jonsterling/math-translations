@@ -29,7 +29,7 @@
   @raw{\widetilde{@C}})
 
 (define-global (Yo)
-  @raw{\epsilon})
+  @raw{\mathop{\epsilon}})
 
 (define-global (Sum i)
   @raw{{\textstyle\sum}\Sub{@i}})
@@ -37,8 +37,19 @@
 (define-global (Prod i)
   @raw{{\textstyle\prod}\Sub{@i}})
 
+(define-global (TopIdent X)
+  @raw{\underline{@X}})
+
 (define-global (ETop)
-  @raw{\underline{E}})
+  @TopIdent{E})
+
+(define-global (FTop)
+  @TopIdent{F})
+
+(define-global (InvImg f)
+  f (Sup @raw{*}))
+(define-global (DirImg f)
+  f (Sub @raw{*}))
 
 
 (define-global (BoldSymbol x)
@@ -47,7 +58,29 @@
     [_ @raw{\boldsymbol{@x}}]))
 
 (define-global (Str x)
-  (BoldSymbol @raw{\mathcal{O}})
+  @raw{\mathcal{O}}
   (Sub x))
+
+(define-global (StrTop X)
+  (prn
+   (raw
+    X
+    ","
+    (Str X))))
+
+(define-global (GSec)
+  @raw{\mathop{@BoldSymbol{\Gamma}}})
+
+(define-global (AffLine)
+  @raw{\mathbb{A}}@Sup{1})
+
+(define-global (Idn)
+  @raw{\mathrm{Id}})
+
+(define-global (RR)
+  @raw{\mathbb{R}})
+
+(define-global (tick)
+  @raw{'})
 
 (publish-macro-library 'coste)
