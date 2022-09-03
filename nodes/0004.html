@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="/problemes-dans-les-topos/assets/style.css">
+  <link rel="stylesheet" href="/math-translations/assets/style.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" integrity="sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs" crossorigin="anonymous">
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js" integrity="sha384-z1fJDqw8ZApjGO3/unPWUPsIymfsJmyrDVWC8Tv/a1HeOtGmkwNd/7xUS0Xcnvsx" crossorigin="anonymous"></script>
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js" integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous"></script>
@@ -20,7 +20,7 @@
     function loadKaTeXMacroLibrary(macrolib) {
       const cached = katexMacroLibCache[macrolib];
       if (cached) { return cached; }
-      const promise = fetch("/problemes-dans-les-topos/assets/macros/" + macrolib + ".katex.json").then(response => response.json());
+      const promise = fetch("/math-translations/assets/macros/" + macrolib + ".katex.json").then(response => response.json());
       katexMacroLibCache[macrolib] = promise;
       return promise;
     }
@@ -49,10 +49,10 @@
 
   <body>
     <header><nav class="site-nav">
-        <a class="site-title" rel="author" href="/problemes-dans-les-topos/">Problèmes dans les topos</a>
+        <a class="site-title" rel="author" href="/math-translations/">Mathematical translations</a>
         <div class="trigger">
           <ul>
-<li><a class="page-link" href="/problemes-dans-les-topos/changelog.html">Recent changes</a></li>
+<li><a class="page-link" href="/math-translations/changelog.html">Recent changes</a></li>
 <li><a class="page-link" id="search-toggle">Search</a></li>
           </ul>
         </div>
@@ -89,7 +89,7 @@
   }
 </style>
 
-<script src="/problemes-dans-les-topos/assets/search.js"></script>
+<script src="/math-translations/assets/search.js"></script>
 
 <form id="search-form" hidden>
   <fieldset>
@@ -129,14 +129,14 @@
 
 <nav class="breadcrumbs">
   
-    <a href="/problemes-dans-les-topos/lectures/problemes-dans-les-topos.html">
+    <a href="/math-translations/lectures/problemes-dans-les-topos.html">
       
       Problèmes dans les topos
       
     </a>
     /
   
-    <a href="/problemes-dans-les-topos/nodes/0000.html">
+    <a href="/math-translations/nodes/0000.html">
       
       <span class="numbering">1.</span>
       
@@ -147,7 +147,7 @@
     </a>
     /
   
-    <a href="/problemes-dans-les-topos/nodes/0003.html">
+    <a href="/math-translations/nodes/0003.html">
       
       <span class="numbering">1.3.</span>
       
@@ -168,12 +168,12 @@
 
 
 <header class="inline">
-  <a class="slug" href="/problemes-dans-les-topos/nodes/0004.html">[0004]</a>
+  <a class="slug" href="/math-translations/nodes/0004.html">[0004]</a>
   <span class="numbering">Translator’s Note 1.3·a</span> (Images).
 </header>
 
 
-  <p>I have taken some liberties with the wording involving images in <a href="/problemes-dans-les-topos/nodes/0003.html" role="tooltip" aria-label="Result 1.3. The algebra of subobjects" class="cref"><span class="numbering">1.3</span> <span class="slug">[0003]</span></a>
+  <p>I have taken some liberties with the wording involving images in <a href="/math-translations/nodes/0003.html" role="tooltip" aria-label="Result 1.3. The algebra of subobjects" class="cref"><span class="numbering">1.3</span> <span class="slug">[0003]</span></a>
 in order to conform with English mathematical usage; for instance, I have
 translated phrases like “prendre l’image par $f$ d’un sous-objet de $X$” as
 “restricting the image of $f$ to a subobject of $X$”.</p>
@@ -229,7 +229,7 @@ translated phrases like “prendre l’image par $f$ d’un sous-objet de $X$”
 
 
 
-  <a class="prev" href="/problemes-dans-les-topos/nodes/0002.html">
+  <a class="prev" href="/math-translations/nodes/0002.html">
     <i class="arrow left"></i>
     <span class="numbering">1.2</span>. Axiomatics in terms of partial morphisms
     <span class="slug">[0002]</span>
@@ -237,7 +237,7 @@ translated phrases like “prendre l’image par $f$ d’un sous-objet de $X$”
 
 
 
-  <a class="next" href="/problemes-dans-les-topos/nodes/000I.html">
+  <a class="next" href="/math-translations/nodes/000I.html">
     <span class="numbering">Translator’s Note 1.3·b</span>. Cartesian adjunction
     <span class="slug">[000I]</span>
     <i class="arrow right"></i>

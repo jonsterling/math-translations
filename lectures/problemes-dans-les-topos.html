@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="/problemes-dans-les-topos/assets/style.css">
+  <link rel="stylesheet" href="/math-translations/assets/style.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" integrity="sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs" crossorigin="anonymous">
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js" integrity="sha384-z1fJDqw8ZApjGO3/unPWUPsIymfsJmyrDVWC8Tv/a1HeOtGmkwNd/7xUS0Xcnvsx" crossorigin="anonymous"></script>
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js" integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous"></script>
@@ -20,7 +20,7 @@
     function loadKaTeXMacroLibrary(macrolib) {
       const cached = katexMacroLibCache[macrolib];
       if (cached) { return cached; }
-      const promise = fetch("/problemes-dans-les-topos/assets/macros/" + macrolib + ".katex.json").then(response => response.json());
+      const promise = fetch("/math-translations/assets/macros/" + macrolib + ".katex.json").then(response => response.json());
       katexMacroLibCache[macrolib] = promise;
       return promise;
     }
@@ -49,10 +49,10 @@
 
   <body>
     <header><nav class="site-nav">
-        <a class="site-title" rel="author" href="/problemes-dans-les-topos/">Problèmes dans les topos</a>
+        <a class="site-title" rel="author" href="/math-translations/">Mathematical translations</a>
         <div class="trigger">
           <ul>
-<li><a class="page-link" href="/problemes-dans-les-topos/changelog.html">Recent changes</a></li>
+<li><a class="page-link" href="/math-translations/changelog.html">Recent changes</a></li>
 <li><a class="page-link" id="search-toggle">Search</a></li>
           </ul>
         </div>
@@ -89,7 +89,7 @@
   }
 </style>
 
-<script src="/problemes-dans-les-topos/assets/search.js"></script>
+<script src="/math-translations/assets/search.js"></script>
 
 <form id="search-form" hidden>
   <fieldset>
@@ -159,7 +159,7 @@
     <a href="#0000">
       A few reminders
     </a>
-    <a class="slug" href="/problemes-dans-les-topos/nodes/0000.html">[0000]</a>
+    <a class="slug" href="/math-translations/nodes/0000.html">[0000]</a>
     <ul class="toc">
   
   
@@ -168,7 +168,7 @@
     <a href="#0001">
       Elementary topos
     </a>
-    <a class="slug" href="/problemes-dans-les-topos/nodes/0001.html">[0001]</a>
+    <a class="slug" href="/math-translations/nodes/0001.html">[0001]</a>
     <ul class="toc">
   
   
@@ -181,7 +181,7 @@
     <a href="#0002">
       Axiomatics in terms of partial morphisms
     </a>
-    <a class="slug" href="/problemes-dans-les-topos/nodes/0002.html">[0002]</a>
+    <a class="slug" href="/math-translations/nodes/0002.html">[0002]</a>
     <ul class="toc">
   
   
@@ -194,7 +194,7 @@
     <a href="#0003">
       The algebra of subobjects
     </a>
-    <a class="slug" href="/problemes-dans-les-topos/nodes/0003.html">[0003]</a>
+    <a class="slug" href="/math-translations/nodes/0003.html">[0003]</a>
     <ul class="toc">
   
   
@@ -207,7 +207,7 @@
     <a href="#0005">
       Relations in a topos
     </a>
-    <a class="slug" href="/problemes-dans-les-topos/nodes/0005.html">[0005]</a>
+    <a class="slug" href="/math-translations/nodes/0005.html">[0005]</a>
     <ul class="toc">
   
   
@@ -224,7 +224,7 @@
     <a href="#000A">
       The object of monos
     </a>
-    <a class="slug" href="/problemes-dans-les-topos/nodes/000A.html">[000A]</a>
+    <a class="slug" href="/math-translations/nodes/000A.html">[000A]</a>
     <ul class="toc">
   
   
@@ -233,7 +233,7 @@
     <a href="#000B">
       Construction of the object of monos
     </a>
-    <a class="slug" href="/problemes-dans-les-topos/nodes/000B.html">[000B]</a>
+    <a class="slug" href="/math-translations/nodes/000B.html">[000B]</a>
     <ul class="toc">
   
   
@@ -246,7 +246,7 @@
     <a href="#000C">
       Universal property of the object of monos
     </a>
-    <a class="slug" href="/problemes-dans-les-topos/nodes/000C.html">[000C]</a>
+    <a class="slug" href="/math-translations/nodes/000C.html">[000C]</a>
     <ul class="toc">
   
   
@@ -259,7 +259,7 @@
     <a href="#000F">
       Composition of monos
     </a>
-    <a class="slug" href="/problemes-dans-les-topos/nodes/000F.html">[000F]</a>
+    <a class="slug" href="/math-translations/nodes/000F.html">[000F]</a>
     <ul class="toc">
   
   
@@ -268,7 +268,7 @@
     <a href="#000G">
       The composition map
     </a>
-    <a class="slug" href="/problemes-dans-les-topos/nodes/000G.html">[000G]</a>
+    <a class="slug" href="/math-translations/nodes/000G.html">[000G]</a>
     <ul class="toc">
   
   
@@ -281,7 +281,7 @@
     <a href="#000H">
       A naturality lemma
     </a>
-    <a class="slug" href="/problemes-dans-les-topos/nodes/000H.html">[000H]</a>
+    <a class="slug" href="/math-translations/nodes/000H.html">[000H]</a>
     <ul class="toc">
   
   
@@ -304,6 +304,32 @@
 
 
 
+  <section id="000L" class="trans-note">
+
+
+<header class="inline">
+  <a class="slug" href="/math-translations/nodes/000L.html">[000L]</a>
+  <span class="numbering">Translator’s Note a</span>.
+</header>
+
+
+    <p>This is a hypertext English translation of Bénabou’s famous report <em>Problèmes
+dans les topos</em>; errors in translation belong to me alone. I have taken some liberties to ensure readability. Node numberings of the form <strong>1.2.3</strong> are guaranteed to be the same as in the
+source text; in places, I have introduced more granular node subdivisions than
+Bénabou; for instance, a subnode of <strong>1.2.3</strong> introduced in translation could
+be numbered <strong>1.2.3·a</strong>. I have added titles to many sections in order to facilitate a useful table of
+contents.</p>
+
+    <p>The original French manuscript of Bénabou can be accessed <a href="assets/benabou.pdf">here</a>.</p>
+
+  </section>
+
+  <script>
+  
+  renderMacrosInSection("macros", "000L");
+  
+</script>
+
   <section id="0000">
 
 
@@ -312,7 +338,7 @@
     
       <span class="numbering">1.</span>
       A few reminders
-      <a class="slug" href="/problemes-dans-les-topos/nodes/0000.html">[0000]</a>
+      <a class="slug" href="/math-translations/nodes/0000.html">[0000]</a>
     
   </h2></header>
 
@@ -323,7 +349,7 @@
 
 
 <header class="inline">
-  <a class="slug" href="/problemes-dans-les-topos/nodes/0001.html">[0001]</a>
+  <a class="slug" href="/math-translations/nodes/0001.html">[0001]</a>
   <span class="numbering">1.1</span> (Elementary topos).
 </header>
 
@@ -351,12 +377,12 @@
 
 
 <header class="inline">
-  <a class="slug" href="/problemes-dans-les-topos/nodes/0002.html">[0002]</a>
+  <a class="slug" href="/math-translations/nodes/0002.html">[0002]</a>
   <span class="numbering">1.2</span> (Axiomatics in terms of partial morphisms).
 </header>
 
 
-      <p>We know that for a topos $\ECat$ the embedding functor into the category $\ECat\Sub{p}$ of partial morphisms admits a right adjoint. This property can also be substituted for axiom (3) of <a href="/problemes-dans-les-topos/nodes/0001.html" role="tooltip" aria-label="Result 1.1. Elementary topos" class="cref"><span class="numbering">1.1</span> <span class="slug">[0001]</span></a>.</p>
+      <p>We know that for a topos $\ECat$ the embedding functor into the category $\ECat\Sub{p}$ of partial morphisms admits a right adjoint. This property can also be substituted for axiom (3) of <a href="/math-translations/nodes/0001.html" role="tooltip" aria-label="Result 1.1. Elementary topos" class="cref"><span class="numbering">1.1</span> <span class="slug">[0001]</span></a>.</p>
 
       <p>We will describe a different embedding of interest below.</p>
 
@@ -372,7 +398,7 @@
 
 
 <header class="inline">
-  <a class="slug" href="/problemes-dans-les-topos/nodes/0003.html">[0003]</a>
+  <a class="slug" href="/math-translations/nodes/0003.html">[0003]</a>
   <span class="numbering">1.3</span> (The algebra of subobjects).
 </header>
 
@@ -385,12 +411,12 @@
 
 
 <header class="inline">
-  <a class="slug" href="/problemes-dans-les-topos/nodes/0004.html">[0004]</a>
+  <a class="slug" href="/math-translations/nodes/0004.html">[0004]</a>
   <span class="numbering">Translator’s Note 1.3·a</span> (Images).
 </header>
 
 
-        <p>I have taken some liberties with the wording involving images in <a href="/problemes-dans-les-topos/nodes/0003.html" role="tooltip" aria-label="Result 1.3. The algebra of subobjects" class="cref"><span class="numbering">1.3</span> <span class="slug">[0003]</span></a>
+        <p>I have taken some liberties with the wording involving images in <a href="/math-translations/nodes/0003.html" role="tooltip" aria-label="Result 1.3. The algebra of subobjects" class="cref"><span class="numbering">1.3</span> <span class="slug">[0003]</span></a>
 in order to conform with English mathematical usage; for instance, I have
 translated phrases like “prendre l’image par $f$ d’un sous-objet de $X$” as
 “restricting the image of $f$ to a subobject of $X$”.</p>
@@ -407,7 +433,7 @@ translated phrases like “prendre l’image par $f$ d’un sous-objet de $X$”
 
 
 <header class="inline">
-  <a class="slug" href="/problemes-dans-les-topos/nodes/000I.html">[000I]</a>
+  <a class="slug" href="/math-translations/nodes/000I.html">[000I]</a>
   <span class="numbering">Translator’s Note 1.3·b</span> (Cartesian adjunction).
 </header>
 
@@ -443,7 +469,7 @@ adjunction”.</p>
     
       <span class="numbering">1.4.</span>
       Relations in a topos
-      <a class="slug" href="/problemes-dans-les-topos/nodes/0005.html">[0005]</a>
+      <a class="slug" href="/math-translations/nodes/0005.html">[0005]</a>
     
   </h3></header>
 
@@ -454,7 +480,7 @@ adjunction”.</p>
 
 
 <header class="inline">
-  <a class="slug" href="/problemes-dans-les-topos/nodes/0007.html">[0007]</a>
+  <a class="slug" href="/math-translations/nodes/0007.html">[0007]</a>
   <span class="numbering">Definition 1.4·a</span>.
 </header>
 
@@ -481,7 +507,7 @@ adjunction”.</p>
 
 
 <header class="inline">
-  <a class="slug" href="/problemes-dans-les-topos/nodes/0008.html">[0008]</a>
+  <a class="slug" href="/math-translations/nodes/0008.html">[0008]</a>
   <span class="numbering">Lemma 1.4·b</span>.
 </header>
 
@@ -502,7 +528,7 @@ $\prn{\Idn{X},f} : X \to X\times Y$; this embedding factors through the
 
 
 <header class="inline">
-  <a class="slug" href="/problemes-dans-les-topos/nodes/0006.html">[0006]</a>
+  <a class="slug" href="/math-translations/nodes/0006.html">[0006]</a>
   <span class="numbering">Proposition 1.4·c</span>.
 </header>
 
@@ -603,7 +629,7 @@ sent to $\brc{y\mid \prn{\exists x}\prn{x\in X\tick \text{ and } y=f\prn{x}}}$.
 
 
 <header class="inline">
-  <a class="slug" href="/problemes-dans-les-topos/nodes/0009.html">[0009]</a>
+  <a class="slug" href="/math-translations/nodes/0009.html">[0009]</a>
   <span class="numbering">Remark 1.4·d</span>.
 </header>
 
@@ -744,7 +770,7 @@ width: 54.621ex;">
     
       <span class="numbering">2.</span>
       The object of monos
-      <a class="slug" href="/problemes-dans-les-topos/nodes/000A.html">[000A]</a>
+      <a class="slug" href="/math-translations/nodes/000A.html">[000A]</a>
     
   </h2></header>
 
@@ -757,7 +783,7 @@ width: 54.621ex;">
 
 
 <header class="inline">
-  <a class="slug" href="/problemes-dans-les-topos/nodes/000B.html">[000B]</a>
+  <a class="slug" href="/math-translations/nodes/000B.html">[000B]</a>
   <span class="numbering">Definition 2.1</span> (Construction of the object of monos).
 </header>
 
@@ -914,7 +940,7 @@ width: 26.259ex;">
 
 
 <header class="inline">
-  <a class="slug" href="/problemes-dans-les-topos/nodes/000E.html">[000E]</a>
+  <a class="slug" href="/math-translations/nodes/000E.html">[000E]</a>
   <span class="numbering">Translator’s Note 2.1·a</span>.
 </header>
 
@@ -923,7 +949,7 @@ width: 26.259ex;">
 translated Bénabou’s “noyau du couple” as “equalizer” — a usage of the French
 school that is explained by Grothendieck in his 1965-1966 lectures on basic
 category theory <a class="citation" href="#grothendieck:1966:ilf">(<i>Introduction Au Langage Fonctoriel</i>, 1966, I.6.3.2)</a>. I have also renamed some of the labels in the first commutative diagram of
-<a href="/problemes-dans-les-topos/nodes/000B.html" role="tooltip" aria-label="Definition 2.1. Construction of the object of monos" class="cref"><span class="numbering">Definition 2.1</span> <span class="slug">[000B]</span></a> for clarity.</p>
+<a href="/math-translations/nodes/000B.html" role="tooltip" aria-label="Definition 2.1. Construction of the object of monos" class="cref"><span class="numbering">Definition 2.1</span> <span class="slug">[000B]</span></a> for clarity.</p>
 
       </section>
 
@@ -949,7 +975,7 @@ category theory <a class="citation" href="#grothendieck:1966:ilf">(<i>Introducti
     
       <span class="numbering">2.2.</span>
       Universal property of the object of monos
-      <a class="slug" href="/problemes-dans-les-topos/nodes/000C.html">[000C]</a>
+      <a class="slug" href="/math-translations/nodes/000C.html">[000C]</a>
     
   </h3></header>
 
@@ -960,7 +986,7 @@ category theory <a class="citation" href="#grothendieck:1966:ilf">(<i>Introducti
 
 
 <header class="inline">
-  <a class="slug" href="/problemes-dans-les-topos/nodes/000D.html">[000D]</a>
+  <a class="slug" href="/math-translations/nodes/000D.html">[000D]</a>
   <span class="numbering">Proposition 2.2·a</span> (Universal property).
 </header>
 
@@ -1149,12 +1175,12 @@ width: 61.173ex;">
 
 
 <header class="inline">
-  <a class="slug" href="/problemes-dans-les-topos/nodes/000J.html">[000J]</a>
+  <a class="slug" href="/math-translations/nodes/000J.html">[000J]</a>
   <span class="numbering">Translator’s Note 2.2·a·a</span>.
 </header>
 
 
-          <p>The annotation $\text{(f.p.)}$ follows Bénabou’s $\text{(p.f.)}$ in the diagram in the proof of <a href="/problemes-dans-les-topos/nodes/000D.html" role="tooltip" aria-label="Proposition 2.2·a. Universal property" class="cref"><span class="numbering">Proposition 2.2·a</span> <span class="slug">[000D]</span></a> and denotes a fibered product square, i.e. a cartesian square.</p>
+          <p>The annotation $\text{(f.p.)}$ follows Bénabou’s $\text{(p.f.)}$ in the diagram in the proof of <a href="/math-translations/nodes/000D.html" role="tooltip" aria-label="Proposition 2.2·a. Universal property" class="cref"><span class="numbering">Proposition 2.2·a</span> <span class="slug">[000D]</span></a> and denotes a fibered product square, i.e. a cartesian square.</p>
 
         </section>
 
@@ -1303,7 +1329,7 @@ the composites $\hat{g}\circ \prn{T\times\pi\Sub{1}}$ and $\hat{g}\circ\prn{T\ti
 
 
 <header class="inline">
-  <a class="slug" href="/problemes-dans-les-topos/nodes/000K.html">[000K]</a>
+  <a class="slug" href="/math-translations/nodes/000K.html">[000K]</a>
   <span class="numbering">Corollary 2.2·b</span>.
 </header>
 
@@ -1340,7 +1366,7 @@ $$</div>
     
       <span class="numbering">2.3.</span>
       Composition of monos
-      <a class="slug" href="/problemes-dans-les-topos/nodes/000F.html">[000F]</a>
+      <a class="slug" href="/math-translations/nodes/000F.html">[000F]</a>
     
   </h3></header>
 
@@ -1351,7 +1377,7 @@ $$</div>
 
 
 <header class="inline">
-  <a class="slug" href="/problemes-dans-les-topos/nodes/000G.html">[000G]</a>
+  <a class="slug" href="/math-translations/nodes/000G.html">[000G]</a>
   <span class="numbering">Proposition 2.3.1</span> (The composition map).
 </header>
 
@@ -1373,7 +1399,7 @@ $$</div>
 
 
 <header class="inline">
-  <a class="slug" href="/problemes-dans-les-topos/nodes/000H.html">[000H]</a>
+  <a class="slug" href="/math-translations/nodes/000H.html">[000H]</a>
   <span class="numbering">Lemma 2.3.2</span> (A naturality lemma).
 </header>
 
@@ -1474,7 +1500,7 @@ $$</div>
     
     
 </div>
-<a class="details" href="/problemes-dans-les-topos/bibliography/kock-mikkelsen_1974.html">Details</a>
+<a class="details" href="/math-translations/bibliography/kock-mikkelsen_1974.html">Details</a>
 </li>
 <li>
 <!-- _layouts/bib.html -->
@@ -1483,7 +1509,7 @@ $$</div>
     
     
 </div>
-<a class="details" href="/problemes-dans-les-topos/bibliography/lawvere_1972.html">Details</a>
+<a class="details" href="/math-translations/bibliography/lawvere_1972.html">Details</a>
 </li>
 <li>
 <!-- _layouts/bib.html -->
@@ -1492,7 +1518,7 @@ $$</div>
     
     
 </div>
-<a class="details" href="/problemes-dans-les-topos/bibliography/grothendieck_1966_ilf.html">Details</a>
+<a class="details" href="/math-translations/bibliography/grothendieck_1966_ilf.html">Details</a>
 </li>
 </ol>
   

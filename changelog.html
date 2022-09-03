@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="/problemes-dans-les-topos/assets/style.css">
+  <link rel="stylesheet" href="/math-translations/assets/style.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" integrity="sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs" crossorigin="anonymous">
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js" integrity="sha384-z1fJDqw8ZApjGO3/unPWUPsIymfsJmyrDVWC8Tv/a1HeOtGmkwNd/7xUS0Xcnvsx" crossorigin="anonymous"></script>
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js" integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous"></script>
@@ -20,7 +20,7 @@
     function loadKaTeXMacroLibrary(macrolib) {
       const cached = katexMacroLibCache[macrolib];
       if (cached) { return cached; }
-      const promise = fetch("/problemes-dans-les-topos/assets/macros/" + macrolib + ".katex.json").then(response => response.json());
+      const promise = fetch("/math-translations/assets/macros/" + macrolib + ".katex.json").then(response => response.json());
       katexMacroLibCache[macrolib] = promise;
       return promise;
     }
@@ -49,10 +49,10 @@
 
   <body>
     <header><nav class="site-nav">
-        <a class="site-title" rel="author" href="/problemes-dans-les-topos/">Problèmes dans les topos</a>
+        <a class="site-title" rel="author" href="/math-translations/">Mathematical translations</a>
         <div class="trigger">
           <ul>
-<li><a class="page-link" href="/problemes-dans-les-topos/changelog.html">Recent changes</a></li>
+<li><a class="page-link" href="/math-translations/changelog.html">Recent changes</a></li>
           </ul>
         </div>
       </nav></header>
@@ -118,6 +118,58 @@
 
   <dt>
 
+<strong>03 Sep 2022</strong>
+
+<a href="https://github.com/jonsterling/math/commit/52e95c4f10a00c884506bf393f0f2a64a713d01d">
+  <code>52e95c4</code>
+</a>
+
+Change into a general math translation project
+
+<span class="author">by
+    <a href="https://www.jonmsterling.com/">Jon Sterling</a></span>
+
+</dt>
+
+  <dd>
+
+    <details open="">
+      <summary>Click to (un)fold the list of all 2 affected nodes.</summary>
+
+      <ul>
+  
+  <li class="diff-M">
+
+    
+      <a href="/math-translations/lectures/problemes-dans-les-topos.html">
+        Problèmes dans les topos
+        
+      </a>
+    
+
+  </li>
+  
+  <li class="diff-A">
+
+    
+      <a href="/math-translations/nodes/000L.html">
+        <span class="numbering">Translator’s Note a</span>
+        
+          <span class="slug">[000L]</span>
+        
+      </a>
+    
+
+  </li>
+  
+</ul>
+
+    </details>
+
+  </dd>
+
+  <dt>
+
 <strong>27 Aug 2022</strong>
 
 <a href="https://github.com/jonsterling/math/commit/62a1fef6b7e12a4d7b062071ff631e68b75674bf">
@@ -141,7 +193,7 @@ patch antex to allow passing macrolib to job
   <li class="diff-M">
 
     
-      <a href="/problemes-dans-les-topos/nodes/0006.html">
+      <a href="/math-translations/nodes/0006.html">
         <span class="numbering">Proposition 1.4·c</span>
         
           <span class="slug">[0006]</span>
@@ -154,7 +206,7 @@ patch antex to allow passing macrolib to job
   <li class="diff-M">
 
     
-      <a href="/problemes-dans-les-topos/nodes/0008.html">
+      <a href="/math-translations/nodes/0008.html">
         <span class="numbering">Lemma 1.4·b</span>
         
           <span class="slug">[0008]</span>
@@ -167,7 +219,7 @@ patch antex to allow passing macrolib to job
   <li class="diff-M">
 
     
-      <a href="/problemes-dans-les-topos/nodes/0009.html">
+      <a href="/math-translations/nodes/0009.html">
         <span class="numbering">Remark 1.4·d</span>
         
           <span class="slug">[0009]</span>
@@ -180,7 +232,7 @@ patch antex to allow passing macrolib to job
   <li class="diff-M">
 
     
-      <a href="/problemes-dans-les-topos/nodes/000B.html">
+      <a href="/math-translations/nodes/000B.html">
         <span class="numbering">Definition 2.1</span>. Construction of the object of monos
         
           <span class="slug">[000B]</span>
@@ -193,7 +245,7 @@ patch antex to allow passing macrolib to job
   <li class="diff-M">
 
     
-      <a href="/problemes-dans-les-topos/nodes/000D.html">
+      <a href="/math-translations/nodes/000D.html">
         <span class="numbering">Proposition 2.2·a</span>. Universal property
         
           <span class="slug">[000D]</span>
@@ -234,7 +286,7 @@ statement of the mono composition lemma
   <li class="diff-M">
 
     
-      <a href="/problemes-dans-les-topos/nodes/000G.html">
+      <a href="/math-translations/nodes/000G.html">
         <span class="numbering">Proposition 2.3.1</span>. The composition map
         
           <span class="slug">[000G]</span>
@@ -275,7 +327,7 @@ add missing conclusion to discussion of global monos
   <li class="diff-M">
 
     
-      <a href="/problemes-dans-les-topos/nodes/000K.html">
+      <a href="/math-translations/nodes/000K.html">
         <span class="numbering">Corollary 2.2·b</span>
         
           <span class="slug">[000K]</span>
@@ -316,7 +368,7 @@ first cut at universal property of the object of monos
   <li class="diff-M">
 
     
-      <a href="/problemes-dans-les-topos/nodes/000C.html">
+      <a href="/math-translations/nodes/000C.html">
         <span class="numbering">Section 2.2</span>. Universal property of the object of monos
         
           <span class="slug">[000C]</span>
@@ -329,7 +381,7 @@ first cut at universal property of the object of monos
   <li class="diff-M">
 
     
-      <a href="/problemes-dans-les-topos/nodes/000D.html">
+      <a href="/math-translations/nodes/000D.html">
         <span class="numbering">Proposition 2.2·a</span>. Universal property
         
           <span class="slug">[000D]</span>
@@ -342,7 +394,7 @@ first cut at universal property of the object of monos
   <li class="diff-A">
 
     
-      <a href="/problemes-dans-les-topos/nodes/000J.html">
+      <a href="/math-translations/nodes/000J.html">
         <span class="numbering">Translator’s Note 2.2·a·a</span>
         
           <span class="slug">[000J]</span>
@@ -355,7 +407,7 @@ first cut at universal property of the object of monos
   <li class="diff-A">
 
     
-      <a href="/problemes-dans-les-topos/nodes/000K.html">
+      <a href="/math-translations/nodes/000K.html">
         <span class="numbering">Corollary 2.2·b</span>
         
           <span class="slug">[000K]</span>
@@ -396,7 +448,7 @@ add discussion of ‘adjoint transpose’ to translators’ note
   <li class="diff-M">
 
     
-      <a href="/problemes-dans-les-topos/nodes/000I.html">
+      <a href="/math-translations/nodes/000I.html">
         <span class="numbering">Translator’s Note 1.3·b</span>. Cartesian adjunction
         
           <span class="slug">[000I]</span>
@@ -437,7 +489,7 @@ state the universal property of the object of monomorphisms
   <li class="diff-M">
 
     
-      <a href="/problemes-dans-les-topos/nodes/000D.html">
+      <a href="/math-translations/nodes/000D.html">
         <span class="numbering">Proposition 2.2·a</span>. Universal property
         
           <span class="slug">[000D]</span>
@@ -478,7 +530,7 @@ rename the macro for the object of monomorphisms
   <li class="diff-M">
 
     
-      <a href="/problemes-dans-les-topos/nodes/000B.html">
+      <a href="/math-translations/nodes/000B.html">
         <span class="numbering">Definition 2.1</span>. Construction of the object of monos
         
           <span class="slug">[000B]</span>
@@ -519,7 +571,7 @@ base inclusion in toc entirely on the clicker
   <li class="diff-M">
 
     
-      <a href="/problemes-dans-les-topos/nodes/000B.html">
+      <a href="/math-translations/nodes/000B.html">
         <span class="numbering">Definition 2.1</span>. Construction of the object of monos
         
           <span class="slug">[000B]</span>
@@ -532,7 +584,7 @@ base inclusion in toc entirely on the clicker
   <li class="diff-M">
 
     
-      <a href="/problemes-dans-les-topos/nodes/000G.html">
+      <a href="/math-translations/nodes/000G.html">
         <span class="numbering">Proposition 2.3.1</span>. The composition map
         
           <span class="slug">[000G]</span>
@@ -545,7 +597,7 @@ base inclusion in toc entirely on the clicker
   <li class="diff-M">
 
     
-      <a href="/problemes-dans-les-topos/nodes/000H.html">
+      <a href="/math-translations/nodes/000H.html">
         <span class="numbering">Lemma 2.3.2</span>. A naturality lemma
         
           <span class="slug">[000H]</span>
@@ -586,7 +638,7 @@ add a translator’s note about the cartesian adjunction
   <li class="diff-M">
 
     
-      <a href="/problemes-dans-les-topos/nodes/0003.html">
+      <a href="/math-translations/nodes/0003.html">
         <span class="numbering">1.3</span>. The algebra of subobjects
         
           <span class="slug">[0003]</span>
@@ -599,7 +651,7 @@ add a translator’s note about the cartesian adjunction
   <li class="diff-A">
 
     
-      <a href="/problemes-dans-les-topos/nodes/000I.html">
+      <a href="/math-translations/nodes/000I.html">
         <span class="numbering">Translator’s Note 1.3·b</span>. Cartesian adjunction
         
           <span class="slug">[000I]</span>
@@ -640,7 +692,7 @@ stubbing out a few more nodes
   <li class="diff-M">
 
     
-      <a href="/problemes-dans-les-topos/nodes/000A.html">
+      <a href="/math-translations/nodes/000A.html">
         <span class="numbering">Section 2</span>. The object of monos
         
           <span class="slug">[000A]</span>
@@ -653,7 +705,7 @@ stubbing out a few more nodes
   <li class="diff-A">
 
     
-      <a href="/problemes-dans-les-topos/nodes/000F.html">
+      <a href="/math-translations/nodes/000F.html">
         <span class="numbering">Section 2.3</span>. Composition of monos
         
           <span class="slug">[000F]</span>
@@ -666,7 +718,7 @@ stubbing out a few more nodes
   <li class="diff-A">
 
     
-      <a href="/problemes-dans-les-topos/nodes/000G.html">
+      <a href="/math-translations/nodes/000G.html">
         <span class="numbering">Proposition 2.3.1</span>. The composition map
         
           <span class="slug">[000G]</span>
@@ -679,7 +731,7 @@ stubbing out a few more nodes
   <li class="diff-A">
 
     
-      <a href="/problemes-dans-les-topos/nodes/000H.html">
+      <a href="/math-translations/nodes/000H.html">
         <span class="numbering">Lemma 2.3.2</span>. A naturality lemma
         
           <span class="slug">[000H]</span>
@@ -720,7 +772,7 @@ add missing south-east label to diagram
   <li class="diff-M">
 
     
-      <a href="/problemes-dans-les-topos/nodes/000B.html">
+      <a href="/math-translations/nodes/000B.html">
         <span class="numbering">Definition 2.1</span>. Construction of the object of monos
         
           <span class="slug">[000B]</span>
@@ -761,7 +813,7 @@ defining the object of monos
   <li class="diff-M">
 
     
-      <a href="/problemes-dans-les-topos/lectures/problemes-dans-les-topos.html">
+      <a href="/math-translations/lectures/problemes-dans-les-topos.html">
         Problèmes dans les topos
         
       </a>
@@ -772,7 +824,7 @@ defining the object of monos
   <li class="diff-A">
 
     
-      <a href="/problemes-dans-les-topos/nodes/000A.html">
+      <a href="/math-translations/nodes/000A.html">
         <span class="numbering">Section 2</span>. The object of monos
         
           <span class="slug">[000A]</span>
@@ -785,7 +837,7 @@ defining the object of monos
   <li class="diff-A">
 
     
-      <a href="/problemes-dans-les-topos/nodes/000B.html">
+      <a href="/math-translations/nodes/000B.html">
         <span class="numbering">Definition 2.1</span>. Construction of the object of monos
         
           <span class="slug">[000B]</span>
@@ -798,7 +850,7 @@ defining the object of monos
   <li class="diff-A">
 
     
-      <a href="/problemes-dans-les-topos/nodes/000C.html">
+      <a href="/math-translations/nodes/000C.html">
         <span class="numbering">Section 2.2</span>. Universal property of the object of monos
         
           <span class="slug">[000C]</span>
@@ -811,7 +863,7 @@ defining the object of monos
   <li class="diff-A">
 
     
-      <a href="/problemes-dans-les-topos/nodes/000D.html">
+      <a href="/math-translations/nodes/000D.html">
         <span class="numbering">Proposition 2.2·a</span>. Universal property
         
           <span class="slug">[000D]</span>
@@ -824,7 +876,7 @@ defining the object of monos
   <li class="diff-A">
 
     
-      <a href="/problemes-dans-les-topos/nodes/000E.html">
+      <a href="/math-translations/nodes/000E.html">
         <span class="numbering">Translator’s Note 2.1·a</span>
         
           <span class="slug">[000E]</span>
@@ -865,7 +917,7 @@ further subdivision and re-organization of nodes
   <li class="diff-M">
 
     
-      <a href="/problemes-dans-les-topos/nodes/0000.html">
+      <a href="/math-translations/nodes/0000.html">
         <span class="numbering">Section 1</span>. A few reminders
         
           <span class="slug">[0000]</span>
@@ -878,7 +930,7 @@ further subdivision and re-organization of nodes
   <li class="diff-M">
 
     
-      <a href="/problemes-dans-les-topos/nodes/0005.html">
+      <a href="/math-translations/nodes/0005.html">
         <span class="numbering">Section 1.4</span>. Relations in a topos
         
           <span class="slug">[0005]</span>
@@ -891,7 +943,7 @@ further subdivision and re-organization of nodes
   <li class="diff-A">
 
     
-      <a href="/problemes-dans-les-topos/nodes/0007.html">
+      <a href="/math-translations/nodes/0007.html">
         <span class="numbering">Definition 1.4·a</span>
         
           <span class="slug">[0007]</span>
@@ -904,7 +956,7 @@ further subdivision and re-organization of nodes
   <li class="diff-A">
 
     
-      <a href="/problemes-dans-les-topos/nodes/0008.html">
+      <a href="/math-translations/nodes/0008.html">
         <span class="numbering">Lemma 1.4·b</span>
         
           <span class="slug">[0008]</span>
@@ -917,7 +969,7 @@ further subdivision and re-organization of nodes
   <li class="diff-A">
 
     
-      <a href="/problemes-dans-les-topos/nodes/0009.html">
+      <a href="/math-translations/nodes/0009.html">
         <span class="numbering">Remark 1.4·d</span>
         
           <span class="slug">[0009]</span>
@@ -958,7 +1010,7 @@ wrap up first draft of right adjoint to E -&gt; Rel(E)
   <li class="diff-M">
 
     
-      <a href="/problemes-dans-les-topos/nodes/0000.html">
+      <a href="/math-translations/nodes/0000.html">
         <span class="numbering">Section 1</span>. A few reminders
         
           <span class="slug">[0000]</span>
@@ -971,7 +1023,7 @@ wrap up first draft of right adjoint to E -&gt; Rel(E)
   <li class="diff-M">
 
     
-      <a href="/problemes-dans-les-topos/nodes/0006.html">
+      <a href="/math-translations/nodes/0006.html">
         <span class="numbering">Proposition 1.4·c</span>
         
           <span class="slug">[0006]</span>
@@ -1012,7 +1064,7 @@ fix a typo: Englihs =&gt; English
   <li class="diff-M">
 
     
-      <a href="/problemes-dans-les-topos/nodes/0004.html">
+      <a href="/math-translations/nodes/0004.html">
         <span class="numbering">Translator’s Note 1.3·a</span>. Images
         
           <span class="slug">[0004]</span>
@@ -1053,7 +1105,7 @@ correct a typo: fonctors =&gt; functors
   <li class="diff-M">
 
     
-      <a href="/problemes-dans-les-topos/nodes/0006.html">
+      <a href="/math-translations/nodes/0006.html">
         <span class="numbering">Proposition 1.4·c</span>
         
           <span class="slug">[0006]</span>
@@ -1094,7 +1146,7 @@ starting proof that E -&gt; Rel(E) has a right adjoint
   <li class="diff-M">
 
     
-      <a href="/problemes-dans-les-topos/nodes/0000.html">
+      <a href="/math-translations/nodes/0000.html">
         <span class="numbering">Section 1</span>. A few reminders
         
           <span class="slug">[0000]</span>
@@ -1107,7 +1159,7 @@ starting proof that E -&gt; Rel(E) has a right adjoint
   <li class="diff-A">
 
     
-      <a href="/problemes-dans-les-topos/nodes/0006.html">
+      <a href="/math-translations/nodes/0006.html">
         <span class="numbering">Proposition 1.4·c</span>
         
           <span class="slug">[0006]</span>
@@ -1148,7 +1200,7 @@ add a title to 0005
   <li class="diff-M">
 
     
-      <a href="/problemes-dans-les-topos/nodes/0005.html">
+      <a href="/math-translations/nodes/0005.html">
         <span class="numbering">Section 1.4</span>. Relations in a topos
         
           <span class="slug">[0005]</span>
@@ -1189,7 +1241,7 @@ setting up the translation project; translate first several nodes
   <li class="diff-A">
 
     
-      <a href="/problemes-dans-les-topos/lectures/problemes-dans-les-topos.html">
+      <a href="/math-translations/lectures/problemes-dans-les-topos.html">
         Problèmes dans les topos
         
       </a>
@@ -1200,7 +1252,7 @@ setting up the translation project; translate first several nodes
   <li class="diff-A">
 
     
-      <a href="/problemes-dans-les-topos/nodes/0000.html">
+      <a href="/math-translations/nodes/0000.html">
         <span class="numbering">Section 1</span>. A few reminders
         
           <span class="slug">[0000]</span>
@@ -1213,7 +1265,7 @@ setting up the translation project; translate first several nodes
   <li class="diff-A">
 
     
-      <a href="/problemes-dans-les-topos/nodes/0001.html">
+      <a href="/math-translations/nodes/0001.html">
         <span class="numbering">1.1</span>. Elementary topos
         
           <span class="slug">[0001]</span>
@@ -1226,7 +1278,7 @@ setting up the translation project; translate first several nodes
   <li class="diff-A">
 
     
-      <a href="/problemes-dans-les-topos/nodes/0002.html">
+      <a href="/math-translations/nodes/0002.html">
         <span class="numbering">1.2</span>. Axiomatics in terms of partial morphisms
         
           <span class="slug">[0002]</span>
@@ -1239,7 +1291,7 @@ setting up the translation project; translate first several nodes
   <li class="diff-A">
 
     
-      <a href="/problemes-dans-les-topos/nodes/0003.html">
+      <a href="/math-translations/nodes/0003.html">
         <span class="numbering">1.3</span>. The algebra of subobjects
         
           <span class="slug">[0003]</span>
@@ -1252,7 +1304,7 @@ setting up the translation project; translate first several nodes
   <li class="diff-A">
 
     
-      <a href="/problemes-dans-les-topos/nodes/0004.html">
+      <a href="/math-translations/nodes/0004.html">
         <span class="numbering">Translator’s Note 1.3·a</span>. Images
         
           <span class="slug">[0004]</span>
@@ -1265,7 +1317,7 @@ setting up the translation project; translate first several nodes
   <li class="diff-A">
 
     
-      <a href="/problemes-dans-les-topos/nodes/0005.html">
+      <a href="/math-translations/nodes/0005.html">
         <span class="numbering">Section 1.4</span>. Relations in a topos
         
           <span class="slug">[0005]</span>

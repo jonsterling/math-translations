@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="/problemes-dans-les-topos/assets/style.css">
+  <link rel="stylesheet" href="/math-translations/assets/style.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" integrity="sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs" crossorigin="anonymous">
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js" integrity="sha384-z1fJDqw8ZApjGO3/unPWUPsIymfsJmyrDVWC8Tv/a1HeOtGmkwNd/7xUS0Xcnvsx" crossorigin="anonymous"></script>
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js" integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous"></script>
@@ -20,7 +20,7 @@
     function loadKaTeXMacroLibrary(macrolib) {
       const cached = katexMacroLibCache[macrolib];
       if (cached) { return cached; }
-      const promise = fetch("/problemes-dans-les-topos/assets/macros/" + macrolib + ".katex.json").then(response => response.json());
+      const promise = fetch("/math-translations/assets/macros/" + macrolib + ".katex.json").then(response => response.json());
       katexMacroLibCache[macrolib] = promise;
       return promise;
     }
@@ -49,36 +49,19 @@
 
   <body>
     <header><nav class="site-nav">
-        <a class="site-title" rel="author" href="/problemes-dans-les-topos/">Problèmes dans les topos</a>
+        <a class="site-title" rel="author" href="/math-translations/">Mathematical translations</a>
         <div class="trigger">
           <ul>
-<li><a class="page-link" href="/problemes-dans-les-topos/changelog.html">Recent changes</a></li>
+<li><a class="page-link" href="/math-translations/changelog.html">Recent changes</a></li>
           </ul>
         </div>
       </nav></header>
 
-    <p>This is a hypertext English translation of Bénabou’s famous report <em>Problèmes
-dans les topos</em>. Errors in translation belong to me alone.</p>
+    <p>This translation project is hosted on <a href="https://github.com/jonsterling/math-translations">GitHub</a>, and I welcome other contributors — especially those with a better command of the French language.</p>
 
-<h2 id="conventions">Conventions</h2>
+<h2 id="the-translations">The translations</h2>
 
-<p>I have taken some liberties to ensure readability.</p>
-
-<p>Node numberings of the form <strong>1.2.3</strong> are guaranteed to be the same as in the
-source text; in places, I have introduced more granular node subdivisions than
-Bénabou; for instance, a subnode of <strong>1.2.3</strong> introduced in translation could
-be numbered <strong>1.2.3·a</strong>.</p>
-
-<p>I have added titles to many sections in order to facilitate a useful table of
-contents.</p>
-
-<h2 id="contributing">Contributing</h2>
-
-<p>The translation project is hosted on <a href="https://github.com/jonsterling/problemes-dans-les-topos">GitHub</a>, and I welcome other contributors — especially those with a better command of the French language. The original French manuscript of Bénabou can be accessed <a href="assets/benabou.pdf">here</a>.</p>
-
-<h2 id="the-translation">The translation</h2>
-
-<p><a href="/problemes-dans-les-topos/lectures/problemes-dans-les-topos.html">Problèmes dans les topos</a></p>
+<p><a href="/math-translations/lectures/problemes-dans-les-topos.html">Problèmes dans les topos</a></p>
 
 
   </body>
