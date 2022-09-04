@@ -6,8 +6,25 @@ support "Stacks Project"-style websites, where you create a bunch of files like
 
 ### Running on your machine
 
-You will need a running LaTeX installation, including `latexmk`, `dvisvgm` and whatever engine and packages you plan on using.
-Chances are that if you're reading this you already have everything you need.
+#### LaTeX requirements
+
+You will need a running LaTeX installation, including `latexmk`, `dvisvgm` and
+whatever engine and packages you plan on using.  Chances are that if you're
+reading this you already have everything you need.
+
+#### Racket
+
+Racket is used for two purposes in this project:
+
+1. The `./mint-node.rkt` for picking fresh node identifiers (this can be done
+   by hand, though).
+
+2. For generating the macro files uniformly across LaTeX and KaTeX. This cannot
+   be done by hand, as the `.rkt` files are meant to be the "source of truth".
+   If you are not editing or adding your own macros, you do not need to run these
+   scripts.
+
+#### Ruby and subtleties with ghostscript
 
 You will need to [install Ruby 2.7.5][ruby-install-url]; you will need to ensure that
 you have ghostscript installed, with the `LIBGS` environment variable correctly
