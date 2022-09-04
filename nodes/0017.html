@@ -15,7 +15,7 @@
 
   <script src="https://cdn.jsdelivr.net/npm/lunr@2.3.9/lunr.min.js" integrity="sha256-DFDZACuFeAqEKv/7Vnu1Tt5ALa58bcWZegGGFNgET8g=" crossorigin="anonymous"></script>
 
-  <title>Relations et carrés exacts</title>
+  <title>Square in a 2-category</title>
 
   <script>
     const katexMacroLibCache = {};
@@ -130,136 +130,34 @@
 </style>
 
 
+<nav class="breadcrumbs">
+  
+  <a href="/math-translations/lectures/guitart:1980.html">
+    
+    Relations et carrés exacts
+    
+  </a>
+  /
+  
+  <a href="/math-translations/nodes/0016.html">
+    
+    <span class="numbering">0.</span>
+    
+    Notation
+    
+    <span class="slug">[0016]</span>
+    
+  </a>
+  /
+  
+</nav>
+
 
   </nav>
 
   <div class="post-content">
-    <section id="guitart:1980">
-
-
-<header>
-  <h1>
     
-      Relations et carrés exacts
-    
-  </h1>
-<p>
-    by 
-      <span itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <span class="p-author h-card" itemprop="name">René Guitart</span></span>
-  </p>
-<p>
-    translated by 
-      <span itemprop="translator" itemscope itemtype="http://schema.org/Person">
-      <span class="p-translator h-card" itemprop="name">Fosco Loregian</span></span>
-  </p></header>
-
-
-  
-  
-    <nav>
-      <h4>Table of Contents</h4>
-      <ul class="toc">
-  
-  
-  <li>
-    0.
-    <a href="#0016">
-      Notation
-    </a>
-    <a class="slug" href="/math-translations/nodes/0016.html">[0016]</a>
-    <ul class="toc">
-  
-  
-</ul>
-
-  </li>
-  
-</ul>
-
-    </nav>
-  
-
-
-
-  <section id="0014" class="trans-note">
-
-
-<header class="inline">
-  <a class="slug" href="/math-translations/nodes/0014.html">[0014]</a>
-  <span class="numbering">Translator’s Note a</span>.
-</header>
-
-
-    <p>This is a hypertext English translation of René Guitart’s paper <em>Relations et carrés exacts</em>, Ann. sc. math. Québec, 1980, Vol. IV, 2; pp 103-125.</p>
-
-    <p>This version of the original text should be understood as a tribute to the author, as a way of making his paper more accessible to those who want to read it and do not know French well enough, as an excuse to understand its content myself, while making it clearer when needed (there are a few more words of explanation around definitions and theorems, and more diagrams/pictures wherever I felt it would have been helped the reader).</p>
-
-    <p>All typos and mistakes that might result from this light editing come from my poor understanding and should not be attributed to the original author.</p>
-
-  </section>
-
-  <script>
-  
-  renderMacrosInSection("guitart", "0014");
-  
-</script>
-
-  <section id="0015">
-
-
-<header class="inline">
-  <a class="slug" href="/math-translations/nodes/0015.html">[0015]</a>
-  <span class="numbering">b</span> (Goals).
-</header>
-
-
-    <p>The scope of the present text is to build a bridge between logic and homology by exposing the calculus of exactness (and its connections with the calculus of relations) in a symmetric 2-category (§3) and in a uniform Yoneda structure (§4) in a general fashion, but first of all in the particular case of the 2-category $\Cat$.</p>
-
-    <p>§1 introduces the concept of <em>exact square</em> in a representable 2-category (cf. H. §1.4).</p>
-    <section id="0019" class="trans-note">
-
-
-<header class="inline">
-  <a class="slug" href="/math-translations/nodes/0019.html">[0019]</a>
-  <span class="numbering">Translator’s Note b·a</span>.
-</header>
-
-
-      <p>In the original paper, <em>H.</em> appears in the form of a reference, but it is not listed in the \emph{Références} section. I have no idea what Guitart was referring to.</p>
-
-    </section>
-
-    <script>
-  
-  renderMacrosInSection("guitart", "0019");
-  
-</script>
-
-  </section>
-
-  <script>
-  
-  renderMacrosInSection("guitart", "0015");
-  
-</script>
-
-  <section id="0016">
-
-
-<header>
-  <h2>
-    
-      <span class="numbering">0.</span>
-      Notation
-      <a class="slug" href="/math-translations/nodes/0016.html">[0016]</a>
-    
-  </h2></header>
-
-
-
-
-    <section id="0017">
+<section id="0017">
 
 
 <header class="inline">
@@ -268,9 +166,9 @@
 </header>
 
 
-      <p>We call <em>square in a 2-category</em> a quadruple of objects $A,B,X,Y$, a quadruple of morphisms $S : A \to X, T : A \to Y, U : X\to B, V : Y \to B$, and a 2-morphism $\varphi : U\circ S \Rightarrow V\circ T$. Such a square will be denoted by a diagram</p>
+  <p>We call <em>square in a 2-category</em> a quadruple of objects $A,B,X,Y$, a quadruple of morphisms $S : A \to X, T : A \to Y, U : X\to B, V : Y \to B$, and a 2-morphism $\varphi : U\circ S \Rightarrow V\circ T$. Such a square will be denoted by a diagram</p>
 
-      <p><span class="antex display"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="79.701121 55.779169 55.752115 52.418086" style="margin: -0.003ex 0.092ex -10.531ex 0.0ex;
+  <p><span class="antex display"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="79.701121 55.779169 55.752115 52.418086" style="margin: -0.003ex 0.092ex -10.531ex 0.0ex;
 height: 13.619ex;
 width: 14.486ex;">
 <defs>
@@ -322,33 +220,17 @@ width: 14.486ex;">
 </g>
 </svg></span></p>
 
-      <p>We will also employ the condensed notation</p>
+  <p>We will also employ the condensed notation</p>
 
-      <div class="kdmath">$$
+  <div class="kdmath">$$
 \varphi : \esq{S}{U}{T}{V}, \qquad S \xto{(U,T;\vf)} V, \qquad \varphi : US \To VT
 $$</div>
-
-    </section>
-
-    <script>
-  
-  renderMacrosInSection("guitart", "0017");
-  
-</script>
-
-  </section>
-
-  <script>
-  
-  renderMacrosInSection("guitart", "0016");
-  
-</script>
 
 </section>
 
 <script>
   
-  renderMacrosInSection("guitart", "guitart:1980");
+  renderMacrosInSection("guitart", "0017");
   
 </script>
 
@@ -394,6 +276,12 @@ $$</div>
 
 
 
+
+  <a class="prev" href="/math-translations/nodes/0015.html">
+    <i class="arrow left"></i>
+    <span class="numbering">b</span>. Goals
+    <span class="slug">[0015]</span>
+  </a>
 
 
 

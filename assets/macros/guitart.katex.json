@@ -1,1 +1,1 @@
-{"\\Sub":"_{#1}","\\Sup":"^{#1}","\\brc":"\\{ #1 \\}","\\brk":"[#1]","\\gl":"\\langle #1 \\rangle","\\prn":"(#1)","\\vrt":"\\vert #1 \\vert"}
+{"\\Cat":"\\mathsf{Cat}","\\Sub":"_{#1}","\\Sup":"^{#1}","\\To":"\\Rightarrow","\\cate":"\\mathsf{#1}","\\esq":"#1\\xrightarrow[#2]{#3}#4","\\vf":"\\varphi","\\xto":"\\xrightarrow"}

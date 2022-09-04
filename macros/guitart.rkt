@@ -7,19 +7,22 @@
 (define-global (Sup x)
   "^{" x "}")
 
-(define-global (brc x)
-  @raw{\{ @x \}})
+(define-global (cate x)
+  @raw{\mathsf{@x}})
 
-(define-global (gl x)
-  @raw{\langle @x \rangle})
+(define-global (Cat)
+  (cate "Cat"))
 
-(define-global (brk x)
-  @raw{[@x]})
+(define-global (xto)
+  "\\xrightarrow")
 
-(define-global (prn x)
-  @raw{(@x)})
+(define-global (vf)
+  "\\varphi")
 
-(define-global (vrt x)
-  @raw{\vert @x \vert})
+(define-global (To)
+  "\\Rightarrow")
 
+(define-global (esq x y z w)
+  ;;; (x "\xrightarrow[" y "]{" z "}" w))
+  @x "\\xrightarrow[" @y "]{" @z "}" @w)
 (publish-macro-library 'guitart)
