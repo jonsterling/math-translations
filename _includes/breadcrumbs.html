@@ -3,21 +3,22 @@
     font-size: small;
     margin-bottom: 1.5em;
   }
+
 </style>
 
 {% unless include.list.size == 0 %}
 <nav class="breadcrumbs">
   {% for resource in include.list %}
-    <a href="{{resource.url | relative_url}}">
-      {% if resource.collection == "nodes" %}
-      <span class="numbering">{{ resource.clicks | to_numbering }}.</span>
-      {% endif %}
-      {{resource.title}}
-      {% if resource.collection == "nodes" %}
-      <span class="slug">[{{resource.slug}}]</span>
-      {% endif %}
-    </a>
-    /
+  <a href="{{resource.url | relative_url}}">
+    {% if resource.collection == "nodes" %}
+    <span class="numbering">{{ resource.clicks | to_numbering: resource.section }}.</span>
+    {% endif %}
+    {{resource.title}}
+    {% if resource.collection == "nodes" %}
+    <span class="slug">[{{resource.slug}}]</span>
+    {% endif %}
+  </a>
+  /
   {% endfor %}
 </nav>
 {% endunless %}

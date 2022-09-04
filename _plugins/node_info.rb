@@ -24,7 +24,7 @@ class NodeInfo
   end
 
   def numbering
-    ToNumberingFilter.to_numbering @node["clicks"]
+    ToNumberingFilter.to_numbering @node["clicks"], @node["section"]
   end
 
   def genus
