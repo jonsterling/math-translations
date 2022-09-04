@@ -15,3 +15,8 @@ macrolib: guitart
 @include{0016}
 
 @include{001A}
+@include{001C}
+@include{001D}
+@include{001E}
+@include{001F}
+@include{001G}
