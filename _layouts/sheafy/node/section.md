@@ -7,7 +7,7 @@
     {% if page.depth == 0 %}
       {{ page.title }}
     {% else %}
-      <span class="numbering">{{ page.clicks | to_numbering }}.</span>
+      <span class="numbering">{{ page.clicks | to_numbering: page.section }}.</span>
       {{ page.title }}
       <a class="slug" href="{{ page.url | relative_url }}">[{{ page.slug }}]</a>
     {% endif %}

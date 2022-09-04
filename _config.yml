@@ -117,6 +117,7 @@ defaults:
 sheafy:
   inheritable:
     - macrolib
+    - section
   references:
     matchers:
       - !ruby/regexp /{%\s*[cp]?ref (?<slug>.+?)\s*%}/
