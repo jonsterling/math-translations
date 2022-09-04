@@ -8,6 +8,21 @@
   "^{" x "}")
 
 (define-global (cate x)
-  @raw{\mathsf\{ @x \}})
+  @raw{\mathsf{@x}})
 
+(define-global (Cat)
+  (cate "Cat"))
+
+(define-global (xto)
+  "\\xrightarrow")
+
+(define-global (vf)
+  "\\varphi")
+
+(define-global (To)
+  "\\Rightarrow")
+
+(define-global (esq x y z w)
+  ;;; (x "\xrightarrow[" y "]{" z "}" w))
+  @x "\\xrightarrow[" @y "]{" @z "}" @w)
 (publish-macro-library 'guitart)
