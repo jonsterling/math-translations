@@ -165,6 +165,10 @@ sheafy:
       layout: sheafy/tree/default
       sublayout: sheafy/node/result
       clicker: section
+    paragraph:
+      layout: sheafy/tree/default
+      sublayout: sheafy/node/paragraph
+      clicker: paragraph
 
 changelog:
   authors:

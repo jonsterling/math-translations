@@ -1,1 +1,1 @@
-{"Cat":["\\mathsf{Cat}",0],"Sub":["_{#1}",1],"Sup":["^{#1}",1],"To":["\\Rightarrow",0],"cate":["\\mathsf{#1}",1],"esq":["#1\\xrightarrow[#2]{#3}#4",4],"vf":["\\varphi",0],"xto":["\\xrightarrow",0]}
+{"Ab":["\\mathsf{Ab}",0],"Cat":["\\mathsf{Cat}",0],"Sub":["_{#1}",1],"Sup":["^{#1}",1],"To":["\\Rightarrow",0],"cate":["\\mathsf{#1}",1],"esq":["#1\\xrightarrow[#2]{#3}#4",4],"vf":["\\varphi",0],"xto":["\\xrightarrow",0]}

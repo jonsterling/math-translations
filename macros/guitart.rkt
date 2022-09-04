@@ -13,6 +13,9 @@
 (define-global (Cat)
   (cate "Cat"))
 
+(define-global (Ab)
+  (cate "Ab"))
+
 (define-global (xto)
   "\\xrightarrow")
 
