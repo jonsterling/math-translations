@@ -1,1 +1,1 @@
-{"\\Ab":"\\mathsf{Ab}","\\Cat":"\\mathsf{Cat}","\\Set":"\\mathsf{Set}","\\Sub":"_{#1}","\\Sup":"^{#1}","\\To":"\\Rightarrow","\\cate":"\\mathsf{#1}","\\esq":"#1\\xrightarrow[#2]{#3}#4","\\vf":"\\varphi","\\xto":"\\xrightarrow"}
+{"\\Ab":"\\mathsf{Ab}","\\Cat":"\\mathsf{Cat}","\\Grp":"\\mathsf{Grp}","\\Prof":"\\mathsf{Prof}","\\Set":"\\mathsf{Set}","\\Sub":"_{#1}","\\Sup":"^{#1}","\\To":"\\Rightarrow","\\cate":"\\mathsf{#1}","\\esq":"#1\\xrightarrow[#2]{#3}#4","\\firstblank":"-","\\sndblank":"=","\\vf":"\\varphi","\\xto":"\\xrightarrow"}

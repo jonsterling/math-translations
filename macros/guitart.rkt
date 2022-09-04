@@ -17,7 +17,10 @@
   (cate "Ab"))
 (define-global (Set)
   (cate "Set"))
-
+(define-global (Prof)
+  (cate "Prof"))
+(define-global (Grp)
+  (cate "Grp"))
 ;;; (for ([i (list 'Cat 'Ab 'Set)])
 ;;;   (define-global (i)
 ;;;   (cate (~v i))))
@@ -30,6 +33,12 @@
 
 (define-global (To)
   "\\Rightarrow")
+
+(define-global (firstblank)
+  "-")
+
+(define-global (sndblank)
+  "=")
 
 (define-global (esq x y z w)
   ;;; (x "\xrightarrow[" y "]{" z "}" w))

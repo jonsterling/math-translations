@@ -35,6 +35,11 @@ antex:
   preamble: >-
     \usepackage{jon-tikz}
     \usepackage{mlmodern,amsfonts,amssymb,amsmath}
+    \newlength{\seplen}
+    \setlength{\seplen}{5pt}
+    \newlength{\sepwid}
+    \setlength{\sepwid}{.4pt}
+
 
   template: |
     \documentclass{article}
