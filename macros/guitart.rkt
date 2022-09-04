@@ -1,5 +1,6 @@
 #lang at-exp racket
 
+(require racket/format)
 (require "macro-kit.rkt")
 
 (define-global (Sub x)
@@ -12,9 +13,14 @@
 
 (define-global (Cat)
   (cate "Cat"))
-
 (define-global (Ab)
   (cate "Ab"))
+(define-global (Set)
+  (cate "Set"))
+
+;;; (for ([i (list 'Cat 'Ab 'Set)])
+;;;   (define-global (i)
+;;;   (cate (~v i))))
 
 (define-global (xto)
   "\\xrightarrow")
