@@ -2,7 +2,7 @@
 
 (require json)
 
-(provide raw define-global define-local publish-macro-library target)
+(provide raw define-global define-local publish-macro-library target id->string)
 (struct macro-repr (name arity inst) #:transparent)
 
 (define target (make-parameter null))
@@ -42,7 +42,7 @@
 (define (macro-list)
   (define (lt? repr1 repr2)
     (string-ci<? (macro-repr-name repr1) (macro-repr-name repr2)))
-  
+
   (sort (set->list (macro-set)) lt?))
 
 (define (render-macros-to-tex filename)
@@ -73,7 +73,7 @@
 (define (index a b)
   (let [(tail (member a (reverse b)))]
     (and tail (length (cdr tail)))))
- 
+
 (define-syntax id->string
   (lambda (stx)
     (syntax-case stx ()
@@ -93,14 +93,14 @@
 (define-syntax-rule (define-local (id arg ...) bdy ...)
   (begin
     (define (id arg ...) (raw bdy ...))))
- 
+
 (define-syntax-rule (define-global (id arg ...) bdy ...)
   (begin
     (define (id arg ...) (raw bdy ...))
     (let*
         ([name (id->string id)]
          [args (list (syntax->datum #'arg) ...)]
-         [arity (length args)]       
+         [arity (length args)]
          [inst
           (let ([arg (name-arg (syntax->datum #'arg) args)] ...)
             (thunk (raw bdy ...)))])
