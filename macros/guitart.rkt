@@ -9,3 +9,5 @@
 
 (define-global (cate x)
   @raw{\mathsf\{ @x \}})
+
+(publish-macro-library 'guitart)
