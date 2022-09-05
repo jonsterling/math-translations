@@ -157,6 +157,11 @@ sheafy:
       sublayout: sheafy/node/result
       genus: Remark
       clicker: result
+    example:
+      layout: sheafy/tree/default
+      sublayout: sheafy/node/result
+      genus: Example
+      clicker: result
     definition:
       layout: sheafy/tree/default
       sublayout: sheafy/node/result

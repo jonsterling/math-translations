@@ -6,3 +6,5 @@ _deploy
 *~
 .sass-cache
 .jekyll*
+Gemfile
+Gemfile.lock
