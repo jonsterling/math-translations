@@ -61,5 +61,8 @@
 (define-global (nbsmat x)
   @raw{\begin{smallmatrix} @x \end{smallmatrix}})
 
+(define-global (tick)
+  @raw{'})
+
 
 (publish-macro-library 'guitart)
