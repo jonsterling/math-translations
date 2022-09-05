@@ -43,7 +43,7 @@
       (mop (id->string name)))
     ...))
 
-(declare-mop colim op)
+(declare-mop colim op Ran Lan)
 
 
 (define-global (firstblank)
