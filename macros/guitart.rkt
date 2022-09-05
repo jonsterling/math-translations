@@ -14,7 +14,7 @@
     [(name) (cate (id->string name))]
     ...))
 
-(define-cats Cat Ab Set Prof Grp Elts Span Rel)
+(define-cats Cat Ab Set Prof Grp Elts Span Rel VCat)
 
 (define-globals*
   [(xto) @raw{\xrightarrow}]
