@@ -13,12 +13,12 @@
 
 
 (define-syntax-rule (define-cats name ...)
-  (begin 
+  (begin
     (define-global (name)
       (cate (id->string name)))
     ...))
 
-(define-cats Cat Ab Set Prof Grp)
+(define-cats Cat Ab Set Prof Grp Elts)
 
 (define-global (xto)
   "\\xrightarrow")
@@ -29,6 +29,23 @@
 (define-global (To)
   "\\Rightarrow")
 
+(define-global (tdown)
+  "\\mathop{\\triangledown}")
+(define-global (btdown)
+  "\\mathop{\\blacktriangledown}")
+
+(define-global (mop x)
+  @raw{\text{@x}})
+
+(define-syntax-rule (declare-mop name ...)
+  (begin
+    (define-global (name)
+      (mop (id->string name)))
+    ...))
+
+(declare-mop colim op)
+
+
 (define-global (firstblank)
   "-")
 
@@ -37,5 +54,12 @@
 
 (define-global (esq x y z w)
   @raw{@x \xrightarrow[@y]{@z}@w})
+
+(define-global (smat x)
+  @raw{\left( \begin{smallmatrix} @x \end{smallmatrix} \right)})
+
+(define-global (nbsmat x)
+  @raw{\begin{smallmatrix} @x \end{smallmatrix}})
+
 
 (publish-macro-library 'guitart)
