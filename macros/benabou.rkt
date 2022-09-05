@@ -2,117 +2,45 @@
 
 (require "macro-kit.rkt")
 
-(define-global (Sub x)
-  "_{" x "}")
-(define-global (Sup x)
-  "^{" x "}")
-
-(define-global (brc x)
-  @raw{\{ @x \}})
-
-(define-global (gl x)
-  @raw{\langle @x \rangle})
-
-(define-global (brk x)
-  @raw{[@x]})
-
-(define-global (prn x)
-  @raw{(@x)})
-
-(define-global (vrt x)
-  @raw{\vert @x \vert})
-
-
-
 (define-global (BoldSymbol x)
   (match (target)
     ['katex @raw{\pmb{@x}}]
     [_ @raw{\boldsymbol{@x}}]))
 
-(define-local (OpnsSymbol)
-  (BoldSymbol @raw{\mathcal{O}}))
+(define-locals*
+  [(OpnsSymbol) (BoldSymbol @raw{\mathcal{O}})]
+  [(bold kwd) @raw{\mathbf{@kwd}}]
+  [(overline x) @raw{\overline{@x}}]
+  [(underline x) @raw{\underline{@x}}])
 
-(define-global (Con x)
-  @raw{\mathsf{@x}})
-
-(define-global (Opns X)
-  (OpnsSymbol)
-  (prn X))
-
-(define-local (overline x)
-  @raw{\overline{@x}})
-
-(define-global (OpCat C)
-  C (Sup (Con "o")))
-
-(define-global (Cod C)
-  (Con "cod")
-  (Sub C))
-
-(define-local (bold kwd)
-  @raw{\mathbf{@kwd}})
-
-(define-local (underline kwd)
-  @raw{\underline{@kwd}})
-
-(define-global (REL E)
-  (bold "Rel")
-  (prn E))
-
-(define-global (ObjMono X Y)
-  (underline (bold "Mono"))
-  (prn (raw X "," Y)))
-
-
-(define-global (TOP E)
-  (bold "Top")
-  (Sub E))
-
-(define-global (Idn x)
-  "1" (Sub x))
-
-(define-global (SelfIx B)
-  @raw{\underline{@B}})
-
-(define-global (Sl E e)
-  E (Sub @raw{/@e}))
-
-(define-global (CoSl e E)
-  E (Sup @raw{\setminus @e}))
-
-
-(define-global (InvImg f)
-  f (Sup @raw{*}))
-(define-global (DirImg f)
-  f (Sub @raw{*}))
-
-(define-global (SET)
-  (bold "Ens"))
-
-(define-global (tick)
-  @raw{'})
-
-(define-global (ObjTerm E)
-  (bold "1") (Sub E))
-
-(define-global (Ob E)
-  (vrt E))
-
-(define-global (ECat)
-  @raw{\mathcal{E}})
-
-(define-global (Hom E X Y)
-  (bold "Hom")
-  (Sub E)
-  (brk
-   @raw{@X,@Y}))
-
-
-(define-global (Monos E X Y)
-  (bold "Mono")
-  (Sub E)
-  (brk
-   @raw{@X,@Y}))
+(define-globals*
+  [(Sub x) "_{" x "}"]
+  [(Sup x)  "^{" x "}"]
+  [(tick) @raw{'}]
+  [(brc x) @raw{\{ @x \}}]
+  [(gl x) @raw{\langle @x \rangle}]
+  [(brk x) @raw{[@x]}]
+  [(prn x) @raw{(@x)}]
+  [(vrt x) @raw{\vert @x \vert}]
+  [(Con x) @raw{\mathsf{@x}}]
+  [(Opns X) (OpnsSymbol) (prn X)]
+  [(OpCat C) C (Sup (Con "o"))]
+  [(Cod C) (Con "cod") (Sub C)]
+  [(REL E) (bold "Rel") (prn E)]
+  [(ObjMono X Y) (underline (bold "Mono")) (prn (raw X "," Y))]
+  [(TOP E) (bold "Top") (Sub E)]
+  [(Idn x) "1" (Sub x)]
+  [(SelfIx B) @raw{\underline{@B}}]
+  [(Sl E e) E (Sub @raw{/@e})]
+  [(CoSl e E) E (Sup @raw{\setminus @e})]
+  [(InvImg f) f (Sup @raw{*})]
+  [(DirImg f) f (Sub @raw{*})]
+  [(SET) (bold "Ens")]
+  [(ObjTerm E) (bold "1") (Sub E)]
+  [(Ob E) (vrt E)]
+  [(ECat) @raw{\mathcal{E}}]
+  [(Hom E X Y) (bold "Hom") (Sub E) (brk @raw{@X,@Y})]
+  [(Monos E X Y) (bold "Mono") (Sub E) (brk @raw{@X,@Y})])
 
 
 (publish-macro-library 'benabou)
