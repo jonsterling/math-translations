@@ -2,7 +2,7 @@
 
 (require json)
 
-(provide raw define-global define-local publish-macro-library target id->string)
+(provide raw define-global define-globals* define-local define-locals* publish-macro-library target id->string)
 (struct macro-repr (name arity inst) #:transparent)
 
 (define target (make-parameter null))
@@ -105,3 +105,16 @@
           (let ([arg (name-arg (syntax->datum #'arg) args)] ...)
             (thunk (raw bdy ...)))])
       (set-add! (macro-set) (macro-repr name arity inst)))))
+
+
+(define-syntax-rule (define-globals* [pat body ...] ...)
+  (begin
+    (define-global pat body ...)
+    ...))
+
+
+(define-syntax-rule (define-locals* [pat body ...] ...)
+  (begin
+    (define-local pat body ...)
+    ...))
+
