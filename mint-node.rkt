@@ -3,6 +3,7 @@
 
 (require racket/runtime-path)
 (require left-pad)
+(require 2htdp/batch-io)
 
 (define-runtime-path NODE_DIR "_nodes/")
 
@@ -55,3 +56,5 @@
       (apply max (map uid-string->int all-committed-uids)))))
 
 (printf "Next node: ~a\n" next-uid-string)
+
+(write-file (string-append "_nodes/" next-uid-string ".md") "---\ntitle:\n---")
