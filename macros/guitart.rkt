@@ -14,13 +14,14 @@
     [(name) (cate (id->string name))]
     ...))
 
-(define-cats Cat Ab Set Prof Grp Elts Span Rel VCat)
+(define-cats Cat Ab Set Prof Grp Elts Span Rel VCat Fib)
 
 (define-globals*
   [(xto) @raw{\xrightarrow}]
   [(xot) @raw{\xleftarrow}]
   [(vf) @raw{\varphi}]
   [(To) @raw{\Rightarrow}]
+  [(pto) @raw{\rightsquigarrow}]
   [(tdown) @raw{\mathop{\triangledown}}]
   [(btdown) @raw{\mathop{\blacktriangledown}}]
   [(firstblank) @raw{-}]

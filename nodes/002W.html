@@ -15,7 +15,7 @@
 
   <script src="https://cdn.jsdelivr.net/npm/lunr@2.3.9/lunr.min.js" integrity="sha256-DFDZACuFeAqEKv/7Vnu1Tt5ALa58bcWZegGGFNgET8g=" crossorigin="anonymous"></script>
 
-  <title>Carrés exacts et carrés déductifs</title>
+  <title>Fibered exact logic</title>
 
   <script>
     const katexMacroLibCache = {};
@@ -130,280 +130,22 @@
 </style>
 
 
+<nav class="breadcrumbs">
+  
+  <a href="/math-translations/lectures/guitart:1981.html">
+    
+    Carrés exacts et carrés déductifs
+    
+  </a>
+  /
+  
+</nav>
+
 
   </nav>
 
   <div class="post-content">
-    <section id="guitart:1981">
-
-
-<header>
-  <h1>
-    
-      Carrés exacts et carrés déductifs
-    
-  </h1>
-<p>
-    by 
-      <span itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <span class="p-author h-card" itemprop="name">René Guitart</span></span>
-  </p>
-<p>
-    translated by 
-      <span itemprop="translator" itemscope itemtype="http://schema.org/Person">
-      <span class="p-translator h-card" itemprop="name">Fosco Loregian</span></span>
-  </p></header>
-
-
-  
-  
-    <nav>
-      <h4>Table of Contents</h4>
-      <ul class="toc">
-  
-  
-  <li>
-    1.
-    <a href="#002V">
-      Goal
-    </a>
-    <a class="slug" href="/math-translations/nodes/002V.html">[002V]</a>
-    <ul class="toc">
-  
-  
-</ul>
-
-  </li>
-  
-  <li>
-    2.
-    <a href="#002W">
-      Fibered exact logic
-    </a>
-    <a class="slug" href="/math-translations/nodes/002W.html">[002W]</a>
-    <ul class="toc">
-  
-  
-</ul>
-
-  </li>
-  
-  <li>
-    3.
-    <a href="#002X">
-      Formal category theory through exact squares
-    </a>
-    <a class="slug" href="/math-translations/nodes/002X.html">[002X]</a>
-    <ul class="toc">
-  
-  
-</ul>
-
-  </li>
-  
-  <li>
-    4.
-    <a href="#002Y">
-      Exact squares in deductive logic
-    </a>
-    <a class="slug" href="/math-translations/nodes/002Y.html">[002Y]</a>
-    <ul class="toc">
-  
-  
-</ul>
-
-  </li>
-  
-  <li>
-    5.
-    <a href="#002Z">
-      Relations, subobjects, free P-algebras
-    </a>
-    <a class="slug" href="/math-translations/nodes/002Z.html">[002Z]</a>
-    <ul class="toc">
-  
-  
-</ul>
-
-  </li>
-  
-  <li>
-    6.
-    <a href="#0030">
-      0030
-    </a>
-    <a class="slug" href="/math-translations/nodes/0030.html">[0030]</a>
-    <ul class="toc">
-  
-  
-</ul>
-
-  </li>
-  
-  <li>
-    7.
-    <a href="#0031">
-      0031
-    </a>
-    <a class="slug" href="/math-translations/nodes/0031.html">[0031]</a>
-    <ul class="toc">
-  
-  
-</ul>
-
-  </li>
-  
-  <li>
-    8.
-    <a href="#0032">
-      0032
-    </a>
-    <a class="slug" href="/math-translations/nodes/0032.html">[0032]</a>
-    <ul class="toc">
-  
-  
-</ul>
-
-  </li>
-  
-  <li>
-    9.
-    <a href="#0033">
-      0033
-    </a>
-    <a class="slug" href="/math-translations/nodes/0033.html">[0033]</a>
-    <ul class="toc">
-  
-  
-</ul>
-
-  </li>
-  
-  <li>
-    10.
-    <a href="#0034">
-      0034
-    </a>
-    <a class="slug" href="/math-translations/nodes/0034.html">[0034]</a>
-    <ul class="toc">
-  
-  
-</ul>
-
-  </li>
-  
-  <li>
-    11.
-    <a href="#0035">
-      0035
-    </a>
-    <a class="slug" href="/math-translations/nodes/0035.html">[0035]</a>
-    <ul class="toc">
-  
-  
-</ul>
-
-  </li>
-  
-  <li>
-    12.
-    <a href="#0036">
-      0036
-    </a>
-    <a class="slug" href="/math-translations/nodes/0036.html">[0036]</a>
-    <ul class="toc">
-  
-  
-</ul>
-
-  </li>
-  
-  <li>
-    13.
-    <a href="#0037">
-      0037
-    </a>
-    <a class="slug" href="/math-translations/nodes/0037.html">[0037]</a>
-    <ul class="toc">
-  
-  
-</ul>
-
-  </li>
-  
-  <li>
-    14.
-    <a href="#0038">
-      0038
-    </a>
-    <a class="slug" href="/math-translations/nodes/0038.html">[0038]</a>
-    <ul class="toc">
-  
-  
-</ul>
-
-  </li>
-  
-</ul>
-
-    </nav>
-  
-
-
-
-  <section id="002U" class="trans-note">
-
-
-<header class="inline">
-  <a class="slug" href="/math-translations/nodes/002U.html">[002U]</a>
-  <span class="numbering">Translator’s Note a</span>.
-</header>
-
-
-    <p>This is a hypertext English translation of René Guitart’s paper <em>Carrés exacts et carrés déductifs</em> <a class="citation" href="#DIA_1981__6__A2_0">(Guitart, 1981)</a>.</p>
-
-    <p>This version of the original text should be understood as a tribute to the author, as a way of making his paper more accessible to those who want to read it and do not know French well enough, as an excuse to understand its content myself, while making it clearer when needed (there are a few more words of explanation around definitions and theorems, and more diagrams/pictures wherever I felt it would have helped the reader).</p>
-
-    <p>All typos and mistakes that might result from this light editing come from my poor understanding and should not be attributed to the original author.</p>
-
-  </section>
-
-  <script>
-  
-  renderMacrosInSection("guitart", "002U");
-  
-</script>
-
-  <section id="002V">
-
-
-<header>
-  <h2>
-    
-      <span class="numbering">1.</span>
-      Goal
-      <a class="slug" href="/math-translations/nodes/002V.html">[002V]</a>
-    
-  </h2></header>
-
-
-
-
-    <p>During 1978 (cf <a class="citation" href="#guitart:1980">(Guitart, 1980)</a>) I have introduced the notion of <em>exact square</em> in 2-category theory and I have shown their usefulness in the special case of the 2-category $\Cat$. Subsequently, I have shown in many occasions (cf <a class="citation" href="#Guitart1982">(Guitart, 1982)</a>) why these exact squares play the same role of the logic equivalence relation $\iff$ in propositional calculus, at the level of general model theory.</p>
-
-    <p>Here, I want to present together the arguments in this direction, those already given, and some new. This will allow me to isolate a new concept meant to play, at the level of general model theory, the same role played by logical <em>implication</em> in propositional calculus; it’s the concept of a <em>deductive square</em>.</p>
-
-    <p>Starting from the concept of deductive square it’s very easy to define proofs. An axiomatic theory is then a 2-category where we have outlined certain zig-zags of morphisms (the axioms), and where we are given certain squares, called “deductive” (the deduction rules). Theorems are then terminal zig-zags of proofs starting from the axioms.</p>
-
-  </section>
-
-  <script>
-  
-  renderMacrosInSection("guitart", "002V");
-  
-</script>
-
-  <section id="002W">
+    <section id="002W">
 
 
 <header>
@@ -416,11 +158,14 @@
   </h2></header>
 
 
+  
+  
 
 
-    <p>The idea of working in additive categories with exact squares instead of exact sequences dates back to Lambek, Mac Lane, Puppe, and a large part of what can be done is exposed in Hilton <a class="citation" href="#10.1007/978-3-642-99902-4_11">(Hilton, 1966)</a>. About te use of exact squares in non-additive categories, and the relation with the problem of embedding the ambient category in various categories with involution, we advise the reader to consult <a class="citation" href="#grandis1977symetr">(Grandis, 1977)</a> or other references (for example Čalenko and Conte).</p>
 
-    <p>The advantage of this point of view lies in the following <em>key observation</em>: we can obtain the composition of two relations-spans $A\leftarrow X\to B$ and $B\leftarrow Y\to C$ as follows:
+  <p>The idea of working in additive categories with exact squares instead of exact sequences dates back to Lambek, Mac Lane, Puppe, and a large part of what can be done is exposed in Hilton <a class="citation" href="#10.1007/978-3-642-99902-4_11">(Hilton, 1966)</a>. About te use of exact squares in non-additive categories, and the relation with the problem of embedding the ambient category in various categories with involution, we advise the reader to consult <a class="citation" href="#grandis1977symetr">(Grandis, 1977)</a> or other references (for example Čalenko and Conte).</p>
+
+  <p>The advantage of this point of view lies in the following <em>key observation</em>: we can obtain the composition of two relations-spans $A\leftarrow X\to B$ and $B\leftarrow Y\to C$ as follows:
 <span class="antex display"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="79.701121 55.870486 159.774835 80.594397" style="margin: -0.022ex 0.043ex -17.884ex 0.0ex;
 height: 20.189ex;
 width: 40.025ex;">
@@ -513,305 +258,13 @@ width: 40.025ex;">
 </svg></span>
 where $*$ is any exact square (see <a class="citation" href="#CTGDC_1975__16_1_17_0">(Guitart, 1975)</a>, p. 35 and <a class="citation" href="#Guitart1982">(Guitart, 1982)</a>, p 22). As a consequence, the study of formation laws for exact squares in a category of the form $\Set^{C^\op}$ allows to understand the calculus of relations of $\Set^{C^\op}$ and as a consequence the deductive logic of this topos.</p>
 
-    <p>However, since we know that the logics of categories like $\Set^{C^\op}$ “are” the natural semantics for intuitionistic logic, we see that the method of exact squares is, in fact, larger than intuitionism. Intuitionism is, in some sense, the discrete or 1-dimensional part of <em>fibered exact logic</em> introduced in <a class="citation" href="#Guitart1982">(Guitart, 1982)</a> as a principal part of categorical logic. Fibered exact logic in a category $C$ is the study of formation laws of exact squares in the 2-categories $\Cat^{C^\op}$, $\Fib(C)$, $\underline{D}(C)$, $\Cat/C$,… (the second principal part of categorical logic on $C$ is the study of fibered monads on $C$, i.e. of monads in $\Cat^{C^\op}$, $\Fib(C)$, $\underline{D}(C)$, $\Cat/C$,…)</p>
-
-  </section>
-
-  <script>
-  
-  renderMacrosInSection("guitart", "002W");
-  
-</script>
-
-  <section id="002X">
-
-
-<header>
-  <h2>
-    
-      <span class="numbering">3.</span>
-      Formal category theory through exact squares
-      <a class="slug" href="/math-translations/nodes/002X.html">[002X]</a>
-    
-  </h2></header>
-
-
-
-
-    <p>Exact squares in $\Cat$, in representable 2-categories or in 2-categories equipped with a Yoneda structure have been introduced in <a class="citation" href="#guitart:1980">(Guitart, 1980)</a> and, subsequently, the theory has been developed by Van den Bril {cite 10}, <a class="citation" href="#CTGDC_1982__23_2_215_0">(Van den Bril, 1982)</a> Guitart <a class="citation" href="#Guitart1982">(Guitart, 1982)</a>, Guitart-Lair {cite 7} (in the case of $\Cat$, see here some complementary remarks to §12).</p>
-
-    <p>One first reason for the success of these 2-dimensional exact squares is that more or less everything one can do in $\Cat$ (e.g., defining comma and co-comma squares, rich functors, opaque functors, co-fully faithful functors, limits and absolute extensions, adjunctions and relative adjunctions, pointwise Kan extensions) is naturally and directly expressible in terms of exact squares.</p>
-
-    <p>A second reason is that, in the case of $\Cat$, profunctor composition seen as bi-fibrations is performed again taking into account the key observation of our §2.</p>
-
-  </section>
-
-  <script>
-  
-  renderMacrosInSection("guitart", "002X");
-  
-</script>
-
-  <section id="002Y">
-
-
-<header>
-  <h2>
-    
-      <span class="numbering">4.</span>
-      Exact squares in deductive logic
-      <a class="slug" href="/math-translations/nodes/002Y.html">[002Y]</a>
-    
-  </h2></header>
-
-
-
-
-    <p>Every first-order formula can be written in terms of continuity and co-continuity conditions (Guitart-Lair, to appear) and such conditions can be expressed in their own right as exactness of squares in $\Cat$, in such a way that the study of the validity of formulas and the theory of deduction for formulæ-theorems starting from formulæ-axioms can be reconducted, in principle, to problems in exact logic. In particular, usual rules of deduction (the principle of contraposition, modus ponens) must be expressible in terms of construction rules for exaxct squares. This is the case, as we outline in <a class="citation" href="#Guitart1982">(Guitart, 1982)</a> and {cite 7}, with modelization rules, syntactization rules, and exact extension (<ins>mod</ins>, <ins>syn</ins>, <ins>ex.ex</ins>). In order to realize the scope of a rule like <ins>ex.ex</ins>, it is enough to observe that it directly entails Mac-Donald and Deleanu-Hilton’s theorems on Kan extensions of cohomolgy theories and K-theories.</p>
-
-    <p>We address the reader to <a class="citation" href="#Guitart1982">(Guitart, 1982)</a> for more details on exact logic.</p>
-
-  </section>
-
-  <script>
-  
-  renderMacrosInSection("guitart", "002Y");
-  
-</script>
-
-  <section id="002Z">
-
-
-<header>
-  <h2>
-    
-      <span class="numbering">5.</span>
-      Relations, subobjects, free P-algebras
-      <a class="slug" href="/math-translations/nodes/002Z.html">[002Z]</a>
-    
-  </h2></header>
-
-
-
-
-    <p>The fact that deduction theory can be transformed (cf. §4) in the theory of construction of exact squares means that (cf. §2) exact squares are the building blocks to describe relational composition, that deduction is the study of a category of relations and, in particular, the determination of triples of relations $R : X \pto Y$, $S: Y \pto Z$, $T=X\pto Z$ such that $S\circ R=T$.</p>
-
-    <p>Since in the case of $\Set$, the relational composition of $R,S$ is obtained as a union of subobjects of $Z$, deduction theory can still be defined as the description of the structure of “objects of subobjects” $PZ$. In general we argue that since $PZ$ is the free omplete lattice over $Z$ (an observation true in $\Set$, which remains valid in every topos taken as an ambient category). I have observed that the structure of $PZ$ can also be analyzed as that of an <em>extensor</em> (see {cite 5} an §7). Either way, the structure of $PZ$ is that of a <em>free $P$-algebra</em>, and it can thus be described once we know the structure of $P$. I have suggested in {cite 6} that we can elucidate such structure as that of an <em>algebraic universe</em> strong enough to perform all construction of first order mathematics, and pliable enough to be valid when the ambien category is a general topos, or some category of fuzzy sets.</p>
-
-  </section>
-
-  <script>
-  
-  renderMacrosInSection("guitart", "002Z");
-  
-</script>
-
-  <section id="0030">
-
-
-<header>
-  <h2>
-    
-      <span class="numbering">6.</span>
-      0030
-      <a class="slug" href="/math-translations/nodes/0030.html">[0030]</a>
-    
-  </h2></header>
-
-
-
-
-  </section>
-
-  <script>
-  
-  renderMacrosInSection("guitart", "0030");
-  
-</script>
-
-  <section id="0031">
-
-
-<header>
-  <h2>
-    
-      <span class="numbering">7.</span>
-      0031
-      <a class="slug" href="/math-translations/nodes/0031.html">[0031]</a>
-    
-  </h2></header>
-
-
-
-
-  </section>
-
-  <script>
-  
-  renderMacrosInSection("guitart", "0031");
-  
-</script>
-
-  <section id="0032">
-
-
-<header>
-  <h2>
-    
-      <span class="numbering">8.</span>
-      0032
-      <a class="slug" href="/math-translations/nodes/0032.html">[0032]</a>
-    
-  </h2></header>
-
-
-
-
-  </section>
-
-  <script>
-  
-  renderMacrosInSection("guitart", "0032");
-  
-</script>
-
-  <section id="0033">
-
-
-<header>
-  <h2>
-    
-      <span class="numbering">9.</span>
-      0033
-      <a class="slug" href="/math-translations/nodes/0033.html">[0033]</a>
-    
-  </h2></header>
-
-
-
-
-  </section>
-
-  <script>
-  
-  renderMacrosInSection("guitart", "0033");
-  
-</script>
-
-  <section id="0034">
-
-
-<header>
-  <h2>
-    
-      <span class="numbering">10.</span>
-      0034
-      <a class="slug" href="/math-translations/nodes/0034.html">[0034]</a>
-    
-  </h2></header>
-
-
-
-
-  </section>
-
-  <script>
-  
-  renderMacrosInSection("guitart", "0034");
-  
-</script>
-
-  <section id="0035">
-
-
-<header>
-  <h2>
-    
-      <span class="numbering">11.</span>
-      0035
-      <a class="slug" href="/math-translations/nodes/0035.html">[0035]</a>
-    
-  </h2></header>
-
-
-
-
-  </section>
-
-  <script>
-  
-  renderMacrosInSection("guitart", "0035");
-  
-</script>
-
-  <section id="0036">
-
-
-<header>
-  <h2>
-    
-      <span class="numbering">12.</span>
-      0036
-      <a class="slug" href="/math-translations/nodes/0036.html">[0036]</a>
-    
-  </h2></header>
-
-
-
-
-  </section>
-
-  <script>
-  
-  renderMacrosInSection("guitart", "0036");
-  
-</script>
-
-  <section id="0037">
-
-
-<header>
-  <h2>
-    
-      <span class="numbering">13.</span>
-      0037
-      <a class="slug" href="/math-translations/nodes/0037.html">[0037]</a>
-    
-  </h2></header>
-
-
-
-
-  </section>
-
-  <script>
-  
-  renderMacrosInSection("guitart", "0037");
-  
-</script>
-
-  <section id="0038">
-
-
-<header class="inline">
-  <a class="slug" href="/math-translations/nodes/0038.html">[0038]</a>
-  <span class="numbering">14</span>.
-</header>
-
-
-  </section>
-
-  <script>
-  
-  renderMacrosInSection("guitart", "0038");
-  
-</script>
+  <p>However, since we know that the logics of categories like $\Set^{C^\op}$ “are” the natural semantics for intuitionistic logic, we see that the method of exact squares is, in fact, larger than intuitionism. Intuitionism is, in some sense, the discrete or 1-dimensional part of <em>fibered exact logic</em> introduced in <a class="citation" href="#Guitart1982">(Guitart, 1982)</a> as a principal part of categorical logic. Fibered exact logic in a category $C$ is the study of formation laws of exact squares in the 2-categories $\Cat^{C^\op}$, $\Fib(C)$, $\underline{D}(C)$, $\Cat/C$,… (the second principal part of categorical logic on $C$ is the study of fibered monads on $C$, i.e. of monads in $\Cat^{C^\op}$, $\Fib(C)$, $\underline{D}(C)$, $\Cat/C$,…)</p>
 
 </section>
 
 <script>
   
-  renderMacrosInSection("guitart", "guitart:1981");
+  renderMacrosInSection("guitart", "002W");
   
 </script>
 
@@ -858,7 +311,19 @@ where $*$ is any exact square (see <a class="citation" href="#CTGDC_1975__16_1_1
 
 
 
+  <a class="prev" href="/math-translations/nodes/002V.html">
+    <i class="arrow left"></i>
+    <span class="numbering">Section 1</span>. Goal
+    <span class="slug">[002V]</span>
+  </a>
 
+
+
+  <a class="next" href="/math-translations/nodes/002X.html">
+    <span class="numbering">Section 3</span>. Formal category theory through exact squares
+    <span class="slug">[002X]</span>
+    <i class="arrow right"></i>
+  </a>
 
 
 </nav>
@@ -870,33 +335,6 @@ where $*$ is any exact square (see <a class="citation" href="#CTGDC_1975__16_1_1
   
     <h4>Bibliography</h4>
     <ol class="bibliography">
-<li>
-<!-- _layouts/bib.html -->
-<div class="text-justify">
-    <span id="DIA_1981__6__A2_0">Guitart, R. (1981). Carrés exacts et carrés déductifs. <i>Diagrammes</i>, <i>6</i>. http://www.numdam.org/item/DIA_1981__6__A2_0/</span>
-    
-    
-</div>
-<a class="details" href="/math-translations/bibliography/DIA_1981__6__A2_0.html">Details</a>
-</li>
-<li>
-<!-- _layouts/bib.html -->
-<div class="text-justify">
-    <span id="guitart:1980">Guitart, R. (1980). Relations et carrés exacts. <i>Ann. Sci. Math. Québec</i>, <i>4</i>(2), 103–125.</span>
-    
-    
-</div>
-<a class="details" href="/math-translations/bibliography/guitart_1980.html">Details</a>
-</li>
-<li>
-<!-- _layouts/bib.html -->
-<div class="text-justify">
-    <span id="Guitart1982">Guitart, R. (1982). Qu’est-ce que la logique dans une catégorie ? <i>Cahiers De Topologie Et Géométrie Différentielle Catégoriques</i>, <i>23</i>(2), 115–148. http://eudml.org/doc/91293</span>
-    
-    
-</div>
-<a class="details" href="/math-translations/bibliography/Guitart1982.html">Details</a>
-</li>
 <li>
 <!-- _layouts/bib.html -->
 <div class="text-justify">
@@ -927,11 +365,11 @@ where $*$ is any exact square (see <a class="citation" href="#CTGDC_1975__16_1_1
 <li>
 <!-- _layouts/bib.html -->
 <div class="text-justify">
-    <span id="CTGDC_1982__23_2_215_0">Van den Bril, L. (1982). Exactitude dans les Yoneda-structures. <i>Cahiers De Topologie Et Géométrie Différentielle Catégoriques</i>, <i>23</i>(2), 215–224. http://www.numdam.org/item/CTGDC_1982__23_2_215_0/</span>
+    <span id="Guitart1982">Guitart, R. (1982). Qu’est-ce que la logique dans une catégorie ? <i>Cahiers De Topologie Et Géométrie Différentielle Catégoriques</i>, <i>23</i>(2), 115–148. http://eudml.org/doc/91293</span>
     
     
 </div>
-<a class="details" href="/math-translations/bibliography/CTGDC_1982__23_2_215_0.html">Details</a>
+<a class="details" href="/math-translations/bibliography/Guitart1982.html">Details</a>
 </li>
 </ol>
   
