@@ -15,7 +15,7 @@
 
   <script src="https://cdn.jsdelivr.net/npm/lunr@2.3.9/lunr.min.js" integrity="sha256-DFDZACuFeAqEKv/7Vnu1Tt5ALa58bcWZegGGFNgET8g=" crossorigin="anonymous"></script>
 
-  <title>0033</title>
+  <title>Syntax and semantics adjunction $Re\dashv Ex$</title>
 
   <script>
     const katexMacroLibCache = {};
@@ -152,7 +152,7 @@
   <h2>
     
       <span class="numbering">9.</span>
-      0033
+      Syntax and semantics adjunction $Re\dashv Ex$
       <a class="slug" href="/math-translations/nodes/0033.html">[0033]</a>
     
   </h2></header>
@@ -162,6 +162,59 @@
   
 
 
+
+  <p>There exists a “syntax and semantics” adjunction between the theory of exactness and the theory of relaion.</p>
+
+  <p>In order to make this precise, let’s work in a category $C$ (the generalization to 2-categories is straightforward) and let’s consider:</p>
+
+  <ol>
+    <li>The category $P(C^\square)$ whose objects are subsets of the set of commutative squares of $C$, and where morphisms are inclusions;</li>
+    <li>The category $PMI(C)$ of <em>involutive promonads</em> $(L,I)$ on $C$ whose objects are bijective-on-objects functors $L : C\to R$ coupled with <em>involutions</em> on $R$, i.e. functors $I : R\to R^\op$ that are the identity on objects and such that $I^\op\circ I=1_R$, and where morphisms $H : (L,I)\to (L’,I’)$ are functors $H : R\to R’$ such that $H\circ L = L’$ and $I’\circ H = H\circ I$.</li>
+  </ol>
+
+  <p>From this we can define a functor</p>
+
+  <div class="kdmath">$$
+\Ex : PMI(C)\to P(C^\square)
+$$</div>
+
+  <p>sending an involutive promonad $(L,I)$ to the set of commutative squares</p>
+
+  <div class="kdmath">$$
+\begin{CD}
+\bullet @&gt;t&gt;&gt; \bullet \\
+@VsVV @VVvV \\
+\bullet @&gt;&gt;u&gt; \bullet
+\end{CD}
+$$</div>
+
+  <p>which moreover are “anticommutative in $R$”, meaning that $Ls\circ ILt = ILu\circ Lv$.</p>
+
+  <p>Such a functor admits a left adjoint</p>
+
+  <div class="kdmath">$$
+Re : P(C^\square) \to PMI(C)
+$$</div>
+
+  <p>that we can describe as follows:</p>
+
+  <ul>
+    <li>Denote by $\Ch(C)$ the free category of paths in $C$, whose objects are those of $C$ and where morphisms from $A$to $B$ are tuples $(X_1,\dots,X_n;f_1,\dots,f_n)$ for which $X_1=A, X_n=B$ and for each $i\le n$, each $X_i$ is an object of $C$ and $f_i = X_i\to X_{i+1}$ or $f_i : X_{i+1}\to X_i$ (the composition of such morphisms is then defined by mere juxtaposition).</li>
+    <li>Denote by $ZZ(C)$ the free category with involution over $C$, whose objects are the same of $C$ and whose morphisms from $A$ to $B$ are zig-zags (or paths) such that fo each $i\le n$, $f_i$ and $f_{i+1}$ are not composable (composition is then juxtaposition, followed if necessary by reduction, if $f_1’$ and $f_n$ are composable; so, $ZZ(C)$ is a certain quotient of $\Ch(C)$).</li>
+    <li>Finally, for any given $E\subseteq C^\square$, define $Re(E)$ to be the category obtained quotienting $\Ch(C)$ by the equivalence relation induced by the following rules:
+      <ol>
+        <li>In every given path we can replace a pair
+<span class="kdmath">$X \xto{f_i} Y \xto{f_{i+1}} Z$</span>
+with $f_{i+1}f_i : X\to Z$;</li>
+        <li>In any given path we can replace $_i : X\to Y$ with a pair
+<span class="kdmath">$X \xto{u} K \xto{v} Y$</span>
+if $f_i=v\circ u$;</li>
+        <li>In any given path we can replace a span
+<span class="kdmath">$X \xot{f_i} Y \xto{f_{i+1}} Z$</span>
+with a cospan</li>
+      </ol>
+    </li>
+  </ul>
 
 </section>
 
@@ -216,7 +269,7 @@
 
   <a class="prev" href="/math-translations/nodes/0032.html">
     <i class="arrow left"></i>
-    <span class="numbering">Section 8</span>
+    <span class="numbering">Section 8</span>. The "proof theory" of $\Cat$
     <span class="slug">[0032]</span>
   </a>
 
