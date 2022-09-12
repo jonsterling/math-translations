@@ -33,7 +33,7 @@
     [(name) (mop (id->string name))]
     ...))
 
-(declare-mop colim op Ran Lan)
+(declare-mop colim op Ran Lan Ex Ch)
 
 (define-globals*
   [(esq x y z w) @raw{@x \xrightarrow[@y]{@z}@w}]
