@@ -14,7 +14,7 @@
     [(name) (cate (id->string name))]
     ...))
 
-(define-cats Cat Ab Set Prof Grp Elts Span Rel VCat Fib)
+(define-cats Cat Ab Set Prof Grp Elts Span Rel VCat Fib Kl)
 
 (define-globals*
   [(xto) @raw{\xrightarrow}]
@@ -33,7 +33,7 @@
     [(name) (mop (id->string name))]
     ...))
 
-(declare-mop colim op Ran Lan Ex Ch)
+(declare-mop colim op Ran Lan Ex Ch fSub)
 
 (define-globals*
   [(esq x y z w) @raw{@x \xrightarrow[@y]{@z}@w}]

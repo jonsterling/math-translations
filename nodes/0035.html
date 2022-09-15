@@ -15,7 +15,7 @@
 
   <script src="https://cdn.jsdelivr.net/npm/lunr@2.3.9/lunr.min.js" integrity="sha256-DFDZACuFeAqEKv/7Vnu1Tt5ALa58bcWZegGGFNgET8g=" crossorigin="anonymous"></script>
 
-  <title>0035</title>
+  <title>A peek at deductive squares</title>
 
   <script>
     const katexMacroLibCache = {};
@@ -152,7 +152,7 @@
   <h2>
     
       <span class="numbering">11.</span>
-      0035
+      A peek at deductive squares
       <a class="slug" href="/math-translations/nodes/0035.html">[0035]</a>
     
   </h2></header>
@@ -162,6 +162,18 @@
   
 
 
+
+  <p>In fact, exact modifications are “strict” proofs in the sense that if, in an ordinary proof/derivation $H \to A \to B\to C \to\dots\to T$ we agree to repeat at each step the preceding assumptions in the conclusion, we obtain a chain of equivalences of exact modifications of $H$:</p>
+
+  <div class="kdmath">$$
+X \iff X\land A \iff H\land A\land B \iff \dots \iff H\land A \land\dots\land T
+$$</div>
+
+  <p>Working inside an object of the form $PZ$, this means avoiding to use $A\subseteq B$ and replace it with $A\cup B=B$ or equivalently $A\cap B=A$.</p>
+
+  <p>If now the relations are paths, using exact squares we can define what it means $R\iff S$ or $R\To T$: in this last situation, it must exist $Q$ such that $R\lor Q\iff T$. But it is unclear how to define $\lor$: this boils down to define $\To$. And consequently, one defines $R\iff S$ by $R\To S$ and $S\To R$.</p>
+
+  <p>This leads to the concept of a <em>deductive square</em>, standing in the same relation $\To$ stands to $\iff$, as I define them in §13</p>
 
 </section>
 
@@ -216,7 +228,7 @@
 
   <a class="prev" href="/math-translations/nodes/0034.html">
     <i class="arrow left"></i>
-    <span class="numbering">Section 10</span>
+    <span class="numbering">Section 10</span>. $\cate{Sub}$-exact squares and relational calculus
     <span class="slug">[0034]</span>
   </a>
 
